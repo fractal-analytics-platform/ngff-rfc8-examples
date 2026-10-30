@@ -3,7 +3,7 @@
 Example of NGFF RFC-8 collections (see https://ngff.openmicroscopy.org/rfc/8/index.html), currently based on revision v1.
 These examples are mostly useful for the collection web viewer at https://fractal-analytics-platform.github.io/ngff-rfc8-viewer.
 
-⚠️ **WARNING**: This project is a proof of concept. It is experimental, unstable, and not intended for production use. Its functionality will evolve with RFC-8 progress.
+> ⚠️ **WARNING**: This project is a proof of concept. It is experimental, unstable, and not intended for production use. Its functionality will evolve with RFC-8 progress.
 
 ## Contributors and license
 
