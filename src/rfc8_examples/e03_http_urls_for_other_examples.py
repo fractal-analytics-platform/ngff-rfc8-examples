@@ -1,8 +1,10 @@
 import json
 import shutil
+from pathlib import Path
 
 from rfc8_examples import BASE_PATH
 
+EXAMPLE_DIR = BASE_PATH / Path(__file__).name
 DATA = {
     "ome": {
         "version": "0.x",
@@ -43,7 +45,7 @@ DATA = {
 
 
 def main():
-    root_path = BASE_PATH / "example3/root.json"
+    root_path = EXAMPLE_DIR / "root.json"
     if root_path.parent.exists():
         shutil.rmtree(root_path.parent)
     root_path.parent.mkdir(parents=True, exist_ok=True)

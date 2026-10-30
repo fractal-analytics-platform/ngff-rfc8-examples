@@ -6,6 +6,7 @@ import ngio_collections as ngc
 from rfc8_examples import BASE_PATH, get_uuid4
 from rfc8_examples.utils import create_zarr_array
 
+EXAMPLE_DIR = BASE_PATH / Path(__file__).name
 
 def _get_singlescales(coord_system_id: int, image_id: str) -> list[ngc.Node]:
     s0_id = get_uuid4(f"{image_id}-s0")
@@ -28,13 +29,12 @@ def _get_singlescales(coord_system_id: int, image_id: str) -> list[ngc.Node]:
         ),
     ]
 
-
 def _get_image(
     name: str,
     coord_system_id: str,
     attributes: dict | None = None,
 ) -> ngc.Node:
-    image_id = get_uuid4({"name": name, "attributes": attributes})
+    image_id =get_uuid4({"name": name, "attributes": attributes})
     _image = ngc.new_node(
         node_type="multiscale",
         id=image_id,
@@ -57,115 +57,77 @@ def _get_image(
     return _image
 
 
-def _get_images_and_tables(coord_system_id: int, well_label: str) -> list[ngc.Node]:
+def _get_children_and_tables(coord_system_id: int, well_label: str) -> list[ngc.Node]:
     return [
         _get_image(
             name="0",
             coord_system_id=coord_system_id,
-            attributes={"field": {"id": 0}},
+            attributes={"field": {"id": 0}, "acquisition": 0},
         ),
         _get_image(
             name="1",
             coord_system_id=coord_system_id,
-            attributes={"field": {"id": 1}},
+            attributes={"field": {"id": 0}, "acquisition": 1},
         ),
         _get_image(
-            name="0_corrected",
+            name="1_registered",
             coord_system_id=coord_system_id,
-            attributes={"field": {"id": 0}},
+            attributes={"field": {"id": 0}, "acquisition": 1},
         ),
         _get_image(
-            name="1_corrected",
+            name="nuclei",
             coord_system_id=coord_system_id,
-            attributes={"field": {"id": 1}},
-        ),
-        _get_image(
-            name="nuclei_0",
-            coord_system_id=coord_system_id,
-            attributes={"field": {"id": 0}},
-        ),
-        _get_image(
-            name="nuclei_1",
-            coord_system_id=coord_system_id,
-            attributes={"field": {"id": 1}},
+            attributes={"field": {"id": 0}, "acquisition": 0},
         ),
         ngc.new_node(
             node_type="table",
-            id=get_uuid4("measurements_0_corrected" + well_label),
-            name="measurements_0_corrected",
-            attributes={"field": {"id": 0}},
-        ),
-        ngc.new_node(
-            node_type="table",
-            id=get_uuid4("measurements_1_corrected" + well_label),
-            name="measurements_1_corrected",
-            attributes={"field": {"id": 1}},
+            id=get_uuid4("nuclei_measurements" + well_label),
+            name="nuclei_measurements",
         ),
     ]
 
 
 def main():
-    counter = 0
     coord_system_id = get_uuid4("coord-system")
 
-    root_collection_path = BASE_PATH / "example4"
+    root_collection_path = EXAMPLE_DIR
     if Path(root_collection_path).exists():
         shutil.rmtree(root_collection_path)
     root_collection_path.mkdir(parents=True, exist_ok=True)
 
-    children_A1 = _get_images_and_tables(coord_system_id=coord_system_id, well_label="A1")
+    children_A1 = _get_children_and_tables(coord_system_id=coord_system_id, well_label="A1")
     children_A1_ref = []
-    children_A2 = _get_images_and_tables(coord_system_id=coord_system_id, well_label="A2")
-    children_A2_ref = []
-    for child in children_A1:
+    for ind, child in enumerate(children_A1):
         url = str(root_collection_path / f"plate/well-A1/{child.name}/zarr.json")
         children_A1_ref.append(ngc.create(url, child, overwrite=True))
         if child.type == "multiscale":
             url = str(root_collection_path / f"plate/well-A1/{child.name}/s0")
-            create_zarr_array(url, seed=counter)
-            counter += 1
-    for child in children_A2:
-        url = str(root_collection_path / f"plate/well-A2/{child.name}/zarr.json")
-        children_A2_ref.append(ngc.create(url, child, overwrite=True))
-        if child.type == "multiscale":
-            url = str(root_collection_path / f"plate/well-A2/{child.name}/s0")
-            create_zarr_array(url, seed=counter)
-            counter += 1
-            
+            create_zarr_array(url, seed=ind)
+
     well_A1 = ngc.new_node(
         "collection",
         name="Well A1",
-        id=get_uuid4("well-A1"),
+        id=get_uuid4("well A1"),
         children=[],
         attributes={"well": {"column": {"id": "1"}, "row": {"id": "A"}}},
     ).add_ref(*children_A1_ref)
 
-    well_A2 = ngc.new_node(
-        "collection",
-        name="Well A2",
-        id=get_uuid4("well-A2"),
-        children=[],
-        attributes={"well": {"column": {"id": "2"}, "row": {"id": "A"}}},
-    ).add_ref(*children_A2_ref)
-
     url = str(root_collection_path / "plate/well-A1/well.json")
     well_A1_ref = ngc.create(url, well_A1, overwrite=True)
-    url = str(root_collection_path / "plate/well-A2/well.json")
-    well_A2_ref = ngc.create(url, well_A2, overwrite=True)
 
     plate = ngc.new_node(
         "collection",
         name="Plate",
-        id=get_uuid4("collection"),
+        id=get_uuid4("plate"),
         children=[],
         attributes={
             "plate": {
                 "acquisitions": [],
-                "columns": [{"id": "1"}, {"id": "2"}],
+                "columns": [{"id": "1"}],
                 "rows": [{"id": "A"}],
             }
         },
-    ).add_ref(well_A1_ref, well_A2_ref)
+    ).add_ref(well_A1_ref)
 
     url = str(root_collection_path / "plate/plate.json")
     ngc.create(url, plate, overwrite=True)

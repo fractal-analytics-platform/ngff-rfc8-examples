@@ -1,9 +1,11 @@
+from pathlib import Path
 
 import ngio_collections as ngc
 
 from rfc8_examples import BASE_PATH, get_uuid4
 from rfc8_examples.utils import create_zarr_array
 
+EXAMPLE_DIR = BASE_PATH / Path(__file__).name
 
 def main():
     coord_system_id = get_uuid4("coord-sysnte-id")
@@ -72,13 +74,12 @@ def main():
         children=(multiscale,),
     )
 
-    base_dir = BASE_PATH / "example1"
-    base_dir.mkdir(parents=True, exist_ok=True)
-    url = str(base_dir / "root.json")
+    EXAMPLE_DIR.mkdir(parents=True, exist_ok=True)
+    url = str(EXAMPLE_DIR / "root.json")
     ngc.create(url, collection, overwrite=True)
 
-    create_zarr_array(base_dir / "1", seed=1111)
-    create_zarr_array(base_dir / "2", seed=2222)
+    create_zarr_array(EXAMPLE_DIR / "1", seed=1111)
+    create_zarr_array(EXAMPLE_DIR / "2", seed=2222)
 
 
 if __name__ == "__main__":
