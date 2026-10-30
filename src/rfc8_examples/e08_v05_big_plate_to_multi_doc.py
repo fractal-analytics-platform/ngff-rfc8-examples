@@ -1,0 +1,154 @@
+"""We use an existing v0.5 OME-Zarr plate to load OME-Zarr metadata
+and use it to build an RFC8 plate.
+We write a multi-document RFC8 collection, with each well as a separate document
+and a separate RFC8 collection.json for the plate itself.
+
+Run with: pixi run python examples/v05_plate_to_multi_doc.py
+"""
+
+from pathlib import Path
+
+import ngio_collections as ngc
+import requests
+
+from rfc8_examples import BASE_PATH
+
+# Use smaller numbers if you want to convert fewer wells for testing
+MAX_ROWS = 100
+MAX_COLS = 100
+EXAMPLE_DIR = BASE_PATH / Path(__file__).with_suffix("").name
+
+plate_url = "https://livingobjects.ebi.ac.uk/idr/share/ome2024-ngff-challenge/idr0036/20591.ome.zarr/"
+
+
+def single_scales(prefix: str, paths: list[str]) -> tuple[ngc.Node, ...]:
+    nodes = []
+    for i, ss_path in enumerate(paths):
+        nodes.append(
+            ngc.new_node(
+                "singlescale",
+                id=f"{prefix}_scale{i}",
+                name=f"{prefix}_scale{i}",
+                ref=ngc.Reference(path=ngc.ZarrPath(path=ss_path)),
+            )
+        )
+    return tuple(nodes)
+
+
+def build_multiscale(
+    prefix: str,
+    paths: list[str],
+    scales: list[list[float]],
+    axes: list[ngc.Axis],
+    extra_attr: ngc.AnyAttribute | None = None,
+) -> ngc.Node:
+    node = ngc.new_node(
+        "multiscale", id=prefix, name=prefix, children=single_scales(prefix, paths)
+    )
+
+    # The multiscale defines the coordinate system its single scales map into.
+    node = node.set_attr(
+        ngc.CoordinateSystemsAttribute(
+            [ngc.CoordinateSystem(id=f"{prefix}_space", axes=axes)]
+        )
+    )
+    if extra_attr is not None:
+        node = node.set_attr(extra_attr)
+
+    # Each single scale maps its array onto the shared coordinate system.
+    for level, factor_list in enumerate(scales):
+        node = node.find(f"{prefix}_scale{level}").set_attr(
+            ngc.CoordinateTransformationsAttribute(
+                [
+                    ngc.ScaleTransformation(
+                        input=ngc.ReferenceObj(id=f"{prefix}_scale{level}"),
+                        output=ngc.ReferenceObj(id=f"{prefix}_space"),
+                        scale=factor_list,
+                    )
+                ]
+            )
+        )
+    return node
+
+
+def build_collection(base_path: Path) -> ngc.Node:
+    """The in-memory tree, detached until `create` writes it."""
+
+    # load json from image_url
+    json_rsp = requests.get(plate_url + "zarr.json").json()
+    plate_json = json_rsp["attributes"]["ome"]["plate"]
+    cols_json = plate_json["columns"][:MAX_COLS]
+    rows_json = plate_json["rows"][:MAX_ROWS]
+    row_names = [row["name"] for row in rows_json]
+    col_names = [col["name"] for col in cols_json]
+
+    plate_attrs = {"plate": {"columns": cols_json, "rows": rows_json}}
+    plate = ngc.new_node("collection", id="plate", name="plate", attributes=plate_attrs)
+
+    # Only process the first 3 wells for demonstration purposes.
+    wells_json = plate_json["wells"]
+    # sort wells by columnIndex and rowIndex
+    wells_json.sort(key=lambda w: (w["rowIndex"], w["columnIndex"]))
+
+    for well_json in wells_json:
+        well_path = well_json["path"]
+        rowname, colname = well_path.split("/")[-2:]
+        if rowname not in row_names:
+            continue
+        if colname not in col_names:
+            continue
+
+        write_path = str(base_path / "wells" / (well_path + ".zarr"))
+
+        well_id = f"well{well_path.replace('/', '')}"
+        well_collection_node = ngc.new_node("collection", id=well_id, name=well_id)
+
+        well_url = plate_url + well_path + "/"
+        well_json = requests.get(well_url + "zarr.json").json()
+
+        img_paths = [
+            img["path"] for img in well_json["attributes"]["ome"]["well"]["images"]
+        ]
+        for img_path in img_paths:
+            img_url = well_url + img_path + "/"
+            ms_json = requests.get(img_url + "zarr.json").json()["attributes"]["ome"][
+                "multiscales"
+            ][0]
+            axes = [
+                ngc.Axis(name=ax["name"], type=ax["type"], unit=ax.get("unit"))
+                for ax in ms_json["axes"]
+            ]
+            # paths are http URLs to the datasets within the multiscale image
+            ds_paths = [img_url + ds["path"] for ds in ms_json["datasets"]]
+            scales = [
+                ds["coordinateTransformations"][0]["scale"]
+                for ds in ms_json["datasets"]
+            ]
+
+            multiscale_node = build_multiscale(
+                f"{rowname}{colname}_field{img_path}", ds_paths, scales, axes
+            )
+            well_collection_node = well_collection_node.add(multiscale_node)
+
+        print("write_path", write_path)
+        rf_well = ngc.create(write_path, well_collection_node, overwrite=True)
+        # well_ref = ngc.open(write_path).ref()  # ReferenceObj(id="image", path=image.zarr)
+
+        # plate = plate.add(well_collection_node)
+        plate = plate.add_ref(rf_well)
+
+    return plate
+
+
+def main() -> None:
+    plate = build_collection(EXAMPLE_DIR)
+
+    url = str(EXAMPLE_DIR / "collection.json")
+    ngc.create(url, plate, overwrite=True)
+
+    print(f"wrote {url}\n")
+    print(Path(url).read_text())
+
+
+if __name__ == "__main__":
+    main()

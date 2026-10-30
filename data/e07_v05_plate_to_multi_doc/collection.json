@@ -39,24 +39,6 @@
       },
       {
         "type": "collection",
-        "name": "wellB1",
-        "id": "wellB1",
-        "path": {
-          "type": "zarr",
-          "path": "./wells/B/1.zarr"
-        }
-      },
-      {
-        "type": "collection",
-        "name": "wellB2",
-        "id": "wellB2",
-        "path": {
-          "type": "zarr",
-          "path": "./wells/B/2.zarr"
-        }
-      },
-      {
-        "type": "collection",
         "name": "wellA2",
         "id": "wellA2",
         "path": {
@@ -71,6 +53,24 @@
         "path": {
           "type": "zarr",
           "path": "./wells/A/3.zarr"
+        }
+      },
+      {
+        "type": "collection",
+        "name": "wellB1",
+        "id": "wellB1",
+        "path": {
+          "type": "zarr",
+          "path": "./wells/B/1.zarr"
+        }
+      },
+      {
+        "type": "collection",
+        "name": "wellB2",
+        "id": "wellB2",
+        "path": {
+          "type": "zarr",
+          "path": "./wells/B/2.zarr"
         }
       },
       {
