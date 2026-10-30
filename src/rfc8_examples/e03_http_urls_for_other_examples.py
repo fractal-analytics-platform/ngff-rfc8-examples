@@ -4,7 +4,7 @@ from pathlib import Path
 
 from rfc8_examples import BASE_PATH
 
-EXAMPLE_DIR = BASE_PATH / Path(__file__).name
+EXAMPLE_DIR = BASE_PATH / Path(__file__).with_suffix("").name
 DATA = {
     "ome": {
         "version": "0.x",

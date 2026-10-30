@@ -5,7 +5,7 @@ import ngio_collections as ngc
 from rfc8_examples import BASE_PATH, get_uuid4
 from rfc8_examples.utils import create_zarr_array
 
-EXAMPLE_DIR = BASE_PATH / Path(__file__).name
+EXAMPLE_DIR = BASE_PATH / Path(__file__).with_suffix("").name
 
 NUM_MULTISCALES = 10
 NUM_SINGLESCALES = 5
