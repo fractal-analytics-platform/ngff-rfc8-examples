@@ -1,33 +1,14 @@
-## Example 1
+# Examples for NGFF RFC-8 collections
 
-This is an inlined collection with a single multiscale node and two singlescale nodes.
+Example of NGFF RFC-8 collections (see https://ngff.openmicroscopy.org/rfc/8/index.html), currently based on revision v1.
+These examples are mostly useful for the collection web viewer at https://fractal-analytics-platform.github.io/ngff-rfc8-viewer.
 
-Create with
-```bash
-uv run example1
-```
+⚠️ **WARNING**: This project is a proof of concept. It is experimental, unstable, and not intended for production use. Its functionality will evolve with RFC-8 progress.
 
-Explore at
-https://fractal-analytics-platform.github.io/ngff-rfc8-viewer/?source=https://raw.githubusercontent.com/fractal-analytics-platform/ngff-rfc8-viewer/refs/heads/main/examples/data/example1/root.json
+## Contributors and license
 
+This project is developed by the [BioVisionCenter](https://www.biovisioncenter.uzh.ch/en.html) at the University of Zurich, who contracts [eXact lab s.r.l.](https://www.exact-lab.it/en/) for software engineering and development support.
 
-## Example 2
+Unless otherwise specified, all components are released under the BSD 3-Clause License, and copyright is with the BioVisionCenter at the University of Zurich.
 
-This is an inlined collection with a `NUM_MULTISCALES=20` multiscale nodes with `NUM_SINGLESCALES=5` singlescale nodes each.
-
-Create with
-```bash
-uv run example2
-```
-
-Explore at
-https://fractal-analytics-platform.github.io/ngff-rfc8-viewer/?source=https://raw.githubusercontent.com/fractal-analytics-platform/ngff-rfc8-viewer/refs/heads/main/examples/data/example2/root.json
-
-
-
-## Example 3
-
-This is a collection of 2 nodes, each using a `https` path to refer to the above 2 examples.
-
-Explore at
-https://fractal-analytics-platform.github.io/ngff-rfc8-viewer/?source=https://raw.githubusercontent.com/fractal-analytics-platform/ngff-rfc8-viewer/refs/heads/main/examples/data/example3/root.json
+Issues and PRs for the project are welcome. Be aware that this project is in a proof of concept phase and we don't commit to its stability. Given that RFC-8 may still evolve, we expect to adapt new RFC-8 changes as they come and break existing functionality when needed.
