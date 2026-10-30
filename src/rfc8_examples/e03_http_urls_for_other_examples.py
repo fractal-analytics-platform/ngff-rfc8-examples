@@ -18,7 +18,7 @@ DATA = {
                 "id": "example1",
                 "path": {
                     "type": "json",
-                    "path": "https://raw.githubusercontent.com/fractal-analytics-platform/ngff-rfc8-viewer/refs/heads/main/examples/data/example1/root.json",
+                    "path": "https://raw.githubusercontent.com/fractal-analytics-platform/ngff-rfc8-examples/main/data/e01_basic_example/root.json",
                 },
             },
             {
@@ -27,7 +27,7 @@ DATA = {
                 "id": "example2",
                 "path": {
                     "type": "json",
-                    "path": "https://raw.githubusercontent.com/fractal-analytics-platform/ngff-rfc8-viewer/refs/heads/main/examples/data/example2/root.json",
+                    "path": "https://raw.githubusercontent.com/fractal-analytics-platform/ngff-rfc8-examples/main/data/e02_basic_examples_many_images/root.json",
                 },
             },
             {
@@ -36,13 +36,12 @@ DATA = {
                 "id": "example4",
                 "path": {
                     "type": "json",
-                    "path": "https://raw.githubusercontent.com/fractal-analytics-platform/ngff-rfc8-viewer/refs/heads/main/examples/data/example4/root.json",
+                    "path": "https://raw.githubusercontent.com/fractal-analytics-platform/ngff-rfc8-examples/main/data/e04_plate_multiple_fields/root.json",
                 },
             },
         ],
     }
 }
-
 
 def main():
     root_path = EXAMPLE_DIR / "root.json"
@@ -51,3 +50,6 @@ def main():
     root_path.parent.mkdir(parents=True, exist_ok=True)
     with open(root_path, "w") as f:
         json.dump(DATA, f, indent=2)
+
+if __name__ == "__main__":
+    main()
