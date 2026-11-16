@@ -1,0 +1,82 @@
+{
+  "attributes": {
+    "ome": {
+      "version": "0.9dev4",
+      "type": "collection",
+      "id": "e65b4c99-6513-4177-acd1-97714d4a054f",
+      "name": "My Collection",
+      "nodes": [
+        {
+          "type": "multiscale",
+          "id": "2fc172e1-8a87-41fa-9b01-d361dfe60874",
+          "name": "My Multiscale",
+          "coordinateSystems": [
+            {
+              "type": "coordinate_system",
+              "id": "8b171e56-87ce-4e61-bef2-6b46826bc8be",
+              "name": "physical",
+              "axes": [
+                {
+                  "name": "y",
+                  "type": "space",
+                  "unit": "micrometer"
+                },
+                {
+                  "name": "x",
+                  "type": "space",
+                  "unit": "micrometer"
+                }
+              ]
+            }
+          ],
+          "coordinateTransformations": [
+            {
+              "input": {
+                "type": "multiscale",
+                "ref": "2fc172e1-8a87-41fa-9b01-d361dfe60874"
+              },
+              "output": {
+                "type": "coordinate_system",
+                "ref": "8b171e56-87ce-4e61-bef2-6b46826bc8be"
+              },
+              "type": "scale",
+              "scale": [
+                0.1,
+                0.1
+              ]
+            }
+          ],
+          "data": [
+            {
+              "type": "array",
+              "path": {
+                "type": "zarr",
+                "format": "relative",
+                "href": "./s0"
+              }
+            },
+            {
+              "type": "array",
+              "path": {
+                "type": "zarr",
+                "format": "relative",
+                "href": "./s1"
+              },
+              "downsamplingTransformations": [
+                {
+                  "type": "scale",
+                  "scale": [
+                    2.0,
+                    2.0
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "zarr_format": 3,
+  "node_type": "group"
+}

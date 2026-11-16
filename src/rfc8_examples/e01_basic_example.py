@@ -7,79 +7,51 @@ from rfc8_examples.utils import create_zarr_array
 
 EXAMPLE_DIR = BASE_PATH / Path(__file__).with_suffix("").name
 
+
 def main():
-    coord_system_id = get_uuid4("coord-sysnte-id")
-    singlescale_1_id = get_uuid4("singlescale-1")
-    singlescale_2_id = get_uuid4("singlescale-2")
+
+    coord_sys_id = get_uuid4("coord-sys-id")
     multiscale_id = get_uuid4("multiscale")
     collection_id = get_uuid4("collection")
-
-    singlescale_1 = ngc.new_node(
-        node_type="singlescale",
-        id=singlescale_1_id,
-        name="high-res",
-        ref=ngc.Reference(path=ngc.ZarrPath(path="./1")),
-    ).set_attr(
-        ngc.CoordinateTransformationsAttribute(
-            [
-                ngc.ScaleTransformation(
-                    input=ngc.ReferenceObj(id=singlescale_1_id),
-                    output=ngc.ReferenceObj(id=coord_system_id),
-                    scale=[1.0, 1.0],
-                )
-            ]
-        )
-    )
-
-    singlescale_2 = ngc.new_node(
-        node_type="singlescale",
-        id=singlescale_2_id,
-        name="low-res",
-        ref=ngc.Reference(path=ngc.ZarrPath(path="./2")),
-    ).set_attr(
-        ngc.CoordinateTransformationsAttribute(
-            [
-                ngc.ScaleTransformation(
-                    input=ngc.ReferenceObj(id=singlescale_2_id),
-                    output=ngc.ReferenceObj(id=coord_system_id),
-                    scale=[2.0, 2.0],
-                )
-            ]
-        )
-    )
-
-    multiscale = ngc.new_node(
-        node_type="multiscale",
+    axes_czyx = [
+        ngc.Axis(name="y", type="space", unit="micrometer"),
+        ngc.Axis(name="x", type="space", unit="micrometer"),
+    ]
+    arrays = [
+        ngc.MultiscaleArray(
+            path=ngc.ZarrPath(href="./s0"),
+            downsamplingTransformations=None,
+        ),
+        ngc.MultiscaleArray(
+            path=ngc.ZarrPath(href="./s1"),
+            downsamplingTransformations=([ngc.ScaleDownsampling(scale=[2, 2])]),
+        ),
+    ]
+    multiscale = ngc.new_multiscale(
         id=multiscale_id,
-        name="my multiscale",
-        children=(singlescale_1, singlescale_2),
-    ).set_attr(
-        ngc.CoordinateSystemsAttribute(
-            [
-                ngc.CoordinateSystem(
-                    id=coord_system_id,
-                    axes=[
-                        ngc.Axis(name="y", type="space", unit="micrometer"),
-                        ngc.Axis(name="x", type="space", unit="micrometer"),
-                    ],
-                )
-            ]
-        )
-    )
-
-    collection = ngc.new_node(
-        "collection",
-        name="my collection",
-        id=collection_id,
-        children=(multiscale,),
+        name="My Multiscale",
+        coordinate_systems=[
+            ngc.CoordinateSystem(id=coord_sys_id, name="physical", axes=axes_czyx)
+        ],
+        coordinate_transformations=[
+            ngc.ScaleTransformation(
+                scale=[0.1, 0.1],
+                input=ngc.ReferenceObj(type="multiscale", ref=multiscale_id),
+                output=ngc.ReferenceObj(type="coordinate_system", ref=coord_sys_id),
+            )
+        ],
+        arrays=arrays,
     )
 
     EXAMPLE_DIR.mkdir(parents=True, exist_ok=True)
-    url = str(EXAMPLE_DIR / "root.json")
-    ngc.create(url, collection, overwrite=True)
+    collection = ngc.new_collection(
+        id=collection_id, name="My Collection", traits=[]
+    ).add(multiscale)
 
-    create_zarr_array(EXAMPLE_DIR / "1", seed=1111)
-    create_zarr_array(EXAMPLE_DIR / "2", seed=2222)
+    ngc.create(str(EXAMPLE_DIR / "zarr.json"), collection, overwrite=True)
+
+    create_zarr_array(EXAMPLE_DIR / "0", seed=0)
+    create_zarr_array(EXAMPLE_DIR / "1", seed=1)
 
 
 if __name__ == "__main__":
