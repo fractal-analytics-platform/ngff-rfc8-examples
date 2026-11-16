@@ -2,7 +2,7 @@ from pathlib import Path
 
 import ngio_collections as ngc
 
-from rfc8_examples import BASE_PATH, get_uuid4
+from rfc8_examples import BASE_PATH, get_uuid
 from rfc8_examples.utils import create_zarr_array
 
 EXAMPLE_DIR = BASE_PATH / Path(__file__).with_suffix("").name
@@ -10,9 +10,9 @@ EXAMPLE_DIR = BASE_PATH / Path(__file__).with_suffix("").name
 
 def main():
 
-    coord_sys_id = get_uuid4("coord-sys-id")
-    multiscale_id = get_uuid4("multiscale")
-    collection_id = get_uuid4("collection")
+    coord_sys_id = get_uuid("coord-sys-id")
+    multiscale_id = get_uuid("multiscale")
+    collection_id = get_uuid("collection")
     axes_czyx = [
         ngc.Axis(name="y", type="space", unit="micrometer"),
         ngc.Axis(name="x", type="space", unit="micrometer"),

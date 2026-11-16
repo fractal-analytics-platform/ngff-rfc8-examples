@@ -2,7 +2,7 @@ from pathlib import Path
 
 import ngio_collections as ngc
 
-from rfc8_examples import BASE_PATH, get_uuid4
+from rfc8_examples import BASE_PATH, get_uuid
 from rfc8_examples.utils import create_zarr_array
 
 EXAMPLE_DIR = BASE_PATH / Path(__file__).with_suffix("").name
@@ -14,14 +14,14 @@ NUM_SINGLESCALES = 5
 def main():
     EXAMPLE_DIR.mkdir(parents=True, exist_ok=True)
 
-    coord_system_id = get_uuid4("coord-system")
-    collection_id = get_uuid4("collection")
+    coord_system_id = get_uuid("coord-system")
+    collection_id = get_uuid("collection")
     multiscales = []
     for ind_multiscale in range(NUM_MULTISCALES):
-        multiscale_id = get_uuid4(f"multiscale-{ind_multiscale}")
+        multiscale_id = get_uuid(f"multiscale-{ind_multiscale}")
         singlescales = []
         for ind_singlescale in range(NUM_SINGLESCALES):
-            singlescale_id = get_uuid4(
+            singlescale_id = get_uuid(
                 f"multiscale-{ind_multiscale}-singlescale-{ind_singlescale}"
             )
             scale_factor = 2.0**ind_singlescale
