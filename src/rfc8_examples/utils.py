@@ -4,9 +4,9 @@ import random
 import uuid
 from pathlib import Path
 
+import ngio_collections as ngc
 import numpy as np
 import zarr
-import ngio_collections as ngc
 
 _RND = random.Random()
 _RND.seed(1234567)

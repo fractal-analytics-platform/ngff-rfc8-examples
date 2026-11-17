@@ -5,25 +5,15 @@ import ngio_collections as ngc
 from rfc8_examples import BASE_PATH, get_uuid
 from rfc8_examples.utils import AXES_YX, create_zarr_array
 
-EXAMPLE_DIR = BASE_PATH / Path(__file__).with_suffix("").name
-
 
 def main():
+    EXAMPLE_DIR = BASE_PATH / Path(__file__).with_suffix("").name
+    EXAMPLE_DIR.mkdir(parents=True, exist_ok=True)
 
     coord_sys_id = get_uuid("coord-sys-id")
     multiscale_id = get_uuid("multiscale")
     collection_id = get_uuid("collection")
-    
-    arrays = [
-        ngc.MultiscaleArray(
-            path=ngc.ZarrPath(href="./s0"),
-            downsamplingTransformations=None,
-        ),
-        ngc.MultiscaleArray(
-            path=ngc.ZarrPath(href="./s1"),
-            downsamplingTransformations=([ngc.ScaleDownsampling(scale=[2, 2])]),
-        ),
-    ]
+
     multiscale = ngc.new_multiscale(
         id=multiscale_id,
         name="My Multiscale",
@@ -37,10 +27,18 @@ def main():
                 output=ngc.ReferenceObj(type="coordinate_system", ref=coord_sys_id),
             )
         ],
-        arrays=arrays,
+        arrays=[
+            ngc.MultiscaleArray(
+                path=ngc.ZarrPath(href="./s0"),
+                downsamplingTransformations=None,
+            ),
+            ngc.MultiscaleArray(
+                path=ngc.ZarrPath(href="./s1"),
+                downsamplingTransformations=([ngc.ScaleDownsampling(scale=[2, 2])]),
+            ),
+        ],
     )
 
-    EXAMPLE_DIR.mkdir(parents=True, exist_ok=True)
     collection = ngc.new_collection(
         id=collection_id, name="My Collection", traits=[]
     ).add(multiscale)
