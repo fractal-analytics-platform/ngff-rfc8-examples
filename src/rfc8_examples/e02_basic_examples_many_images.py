@@ -35,10 +35,7 @@ def main():
                     ),
                 )
             )
-            create_zarr_array(
-                EXAMPLE_DIR / rel_path_multiscale / str(ind_multiscale),
-                seed=(ind_multiscale * 100 + ind_singlescale),
-            )
+            
 
         multiscale_node = ngc.new_multiscale(
             id=multiscale_id,
@@ -61,12 +58,17 @@ def main():
             multiscale_node,
         )
         multiscales_refs.append(multiscale_link)
+        for ind_multiscale in range(NUM_MULTISCALES):
+            create_zarr_array(
+                EXAMPLE_DIR / rel_path_multiscale / str(ind_multiscale),
+                seed=(ind_multiscale * 100 + ind_singlescale),
+            )
 
     collection = ngc.new_collection(
         id=collection_id,
         name="My Collection",
         traits=[],
-    ).add_external(multiscales_refs)
+    ).add_external(*multiscales_refs)
 
     url = str(EXAMPLE_DIR / "zarr.json")
     ngc.create(url, collection, overwrite=True)
