@@ -8,7 +8,7 @@
       {
         "name": "Collection B",
         "id": "B",
-        "type": "collection"
+        "type": "collection",
         "nodes": [
             "id": "A",
             "type": "collection"
