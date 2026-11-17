@@ -23,7 +23,7 @@ def main():
         for ind_singlescale in range(NUM_SINGLESCALES):
             arrays.append(
                 ngc.MultiscaleArray(
-                    path=ngc.ZarrPath(href=f".{rel_path_multiscale}/s{ind_singlescale}"),
+                    path=ngc.ZarrPath(href=f"./s{ind_singlescale}"),
                     downsamplingTransformations=(
                         None
                         if ind_singlescale == 0
