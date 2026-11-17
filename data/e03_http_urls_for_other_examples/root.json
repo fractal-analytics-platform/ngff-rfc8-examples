@@ -7,6 +7,8 @@
     "nodes": [
       {
         "type": "collection",
+        "id": "e65b4c99-6513-e177-ecd1-97714d4a054f",
+        "name": "My Collection",
         "path": {
           "type": "https://fractal-analytics-platform.github.io/ngff-extensions/node-path-http",
           "href": "https://raw.githubusercontent.com/fractal-analytics-platform/ngff-rfc8-examples/main/data/e01_basic_example",
@@ -15,6 +17,8 @@
       },
       {
         "type": "collection",
+        "id": "e65b4c99-6513-e177-ecd1-97714d4a054f",
+        "name": "My Collection",
         "path": {
           "type": "https://fractal-analytics-platform.github.io/ngff-extensions/node-path-http",
           "href": "https://raw.githubusercontent.com/fractal-analytics-platform/ngff-rfc8-examples/main/data/e02_basic_examples_many_images",

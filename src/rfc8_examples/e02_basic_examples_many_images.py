@@ -59,6 +59,7 @@ def main():
         )
         multiscales_refs.append(multiscale_link)
         for ind_singlescale in range(NUM_SINGLESCALES):
+            print(EXAMPLE_DIR / rel_path_multiscale / f"s{ind_singlescale}")
             create_zarr_array(
                 EXAMPLE_DIR / rel_path_multiscale / f"s{ind_singlescale}",
                 seed=(ind_multiscale * 100 + ind_singlescale),

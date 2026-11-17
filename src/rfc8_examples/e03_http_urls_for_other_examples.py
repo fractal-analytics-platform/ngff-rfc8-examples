@@ -4,6 +4,10 @@ from pathlib import Path
 
 from rfc8_examples import BASE_PATH
 
+e01_ome = json.loads((BASE_PATH / "e01_basic_example/zarr.json").read_text())["attributes"]["ome"]
+e02_ome = json.loads((BASE_PATH / "e02_basic_examples_many_images/zarr.json").read_text())["attributes"]["ome"]
+
+
 EXAMPLE_DIR = BASE_PATH / Path(__file__).with_suffix("").name
 DATA = {
     "ome": {
@@ -14,6 +18,8 @@ DATA = {
         "nodes": [
             {
                 "type": "collection",
+                "id": e01_ome["id"],
+                "name": e01_ome["name"],
                 "path": {
                     "type": "https://fractal-analytics-platform.github.io/ngff-extensions/node-path-http",
                     "href": "https://raw.githubusercontent.com/fractal-analytics-platform/ngff-rfc8-examples/main/data/e01_basic_example",
@@ -22,6 +28,8 @@ DATA = {
             },
             {
                 "type": "collection",
+                "id": e02_ome["id"],
+                "name": e02_ome["name"],
                 "path": {
                     "type": "https://fractal-analytics-platform.github.io/ngff-extensions/node-path-http",
                     "href": "https://raw.githubusercontent.com/fractal-analytics-platform/ngff-rfc8-examples/main/data/e02_basic_examples_many_images",
