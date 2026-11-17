@@ -47,7 +47,7 @@
           "path": {
             "type": "zarr",
             "format": "relative",
-            "href": "./s0"
+            "href": ".image-04/s0"
           }
         },
         {
@@ -55,7 +55,7 @@
           "path": {
             "type": "zarr",
             "format": "relative",
-            "href": "./s1"
+            "href": ".image-04/s1"
           },
           "downsamplingTransformations": [
             {
@@ -72,7 +72,7 @@
           "path": {
             "type": "zarr",
             "format": "relative",
-            "href": "./s2"
+            "href": ".image-04/s2"
           },
           "downsamplingTransformations": [
             {
@@ -89,7 +89,7 @@
           "path": {
             "type": "zarr",
             "format": "relative",
-            "href": "./s3"
+            "href": ".image-04/s3"
           },
           "downsamplingTransformations": [
             {
@@ -106,7 +106,7 @@
           "path": {
             "type": "zarr",
             "format": "relative",
-            "href": "./s4"
+            "href": ".image-04/s4"
           },
           "downsamplingTransformations": [
             {
