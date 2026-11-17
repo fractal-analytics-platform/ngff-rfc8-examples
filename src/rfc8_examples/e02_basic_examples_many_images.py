@@ -58,9 +58,9 @@ def main():
             multiscale_node,
         )
         multiscales_refs.append(multiscale_link)
-        for ind_multiscale in range(NUM_MULTISCALES):
+        for ind_singlescale in range(NUM_SINGLESCALES):
             create_zarr_array(
-                EXAMPLE_DIR / rel_path_multiscale / str(ind_multiscale),
+                EXAMPLE_DIR / rel_path_multiscale / f"s{ind_singlescale}",
                 seed=(ind_multiscale * 100 + ind_singlescale),
             )
 

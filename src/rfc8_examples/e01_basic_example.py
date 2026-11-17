@@ -45,8 +45,8 @@ def main():
 
     ngc.create(str(EXAMPLE_DIR / "zarr.json"), collection, overwrite=True)
 
-    create_zarr_array(EXAMPLE_DIR / "0", seed=0)
-    create_zarr_array(EXAMPLE_DIR / "1", seed=1)
+    create_zarr_array(EXAMPLE_DIR / "s0", seed=0)
+    create_zarr_array(EXAMPLE_DIR / "s1", seed=1)
 
 
 if __name__ == "__main__":
