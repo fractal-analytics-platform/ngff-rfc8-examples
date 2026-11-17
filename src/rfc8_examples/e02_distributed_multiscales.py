@@ -1,3 +1,4 @@
+import shutil
 from pathlib import Path
 
 import ngio_collections as ngc
@@ -11,14 +12,16 @@ NUM_SINGLESCALES = 5
 
 def main():
     EXAMPLE_DIR = BASE_PATH / Path(__file__).with_suffix("").name
+    print(f"Running {Path(__file__).name}, {EXAMPLE_DIR}")
+    shutil.rmtree(EXAMPLE_DIR, ignore_errors=True)
     EXAMPLE_DIR.mkdir(parents=True, exist_ok=True)
 
-    coord_sys_id = get_uuid("coord-system")
-    collection_id = get_uuid("collection")
+    coord_sys_id = get_uuid("e02-coord-system")
+    collection_id = get_uuid("e02-collection")
     multiscales_refs = []
     for ind_multiscale in range(NUM_MULTISCALES):
         rel_path_multiscale = f"image-{ind_multiscale:02d}"
-        multiscale_id = get_uuid(f"multiscale-{ind_multiscale}")
+        multiscale_id = get_uuid(f"e02-multiscale-{ind_multiscale}")
         arrays = []
         for ind_singlescale in range(NUM_SINGLESCALES):
             arrays.append(
@@ -59,7 +62,6 @@ def main():
         )
         multiscales_refs.append(multiscale_link)
         for ind_singlescale in range(NUM_SINGLESCALES):
-            print(EXAMPLE_DIR / rel_path_multiscale / f"s{ind_singlescale}")
             create_zarr_array(
                 EXAMPLE_DIR / rel_path_multiscale / f"s{ind_singlescale}",
                 seed=(ind_multiscale * 100 + ind_singlescale),

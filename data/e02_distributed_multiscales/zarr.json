@@ -3,12 +3,12 @@
     "ome": {
       "version": "0.9dev4",
       "type": "collection",
-      "id": "e65b4c99-6513-e177-ecd1-97714d4a054f",
+      "id": "5a563561-045a-c4b3-21d3-47caaf2213d2",
       "name": "My Collection",
       "nodes": [
         {
           "type": "multiscale",
-          "id": "eee872e8-b127-650e-e4e0-713a562efb0d",
+          "id": "2af30595-7e45-a73f-e506-f0771180562c",
           "name": "Multiscale 0",
           "path": {
             "type": "zarr",
@@ -18,7 +18,7 @@
         },
         {
           "type": "multiscale",
-          "id": "3a69e727-2650-2a4a-91ee-b50bbe6e1599",
+          "id": "39bb5903-e2b7-00c3-48a0-1d37ae8f9349",
           "name": "Multiscale 1",
           "path": {
             "type": "zarr",
@@ -28,7 +28,7 @@
         },
         {
           "type": "multiscale",
-          "id": "96281872-d457-4736-0ff6-748148b2d044",
+          "id": "affc95a7-9c37-5105-049b-34b230c6beff",
           "name": "Multiscale 2",
           "path": {
             "type": "zarr",
@@ -38,7 +38,7 @@
         },
         {
           "type": "multiscale",
-          "id": "937e9afc-e48d-5b5c-89e4-c8d0de6f79ee",
+          "id": "343a4ded-6d2c-a819-c6d6-6cd29a35aa74",
           "name": "Multiscale 3",
           "path": {
             "type": "zarr",
@@ -48,7 +48,7 @@
         },
         {
           "type": "multiscale",
-          "id": "6f13c781-de51-e9fa-cb40-b69683534b69",
+          "id": "aafa7aec-b714-62a9-528d-9b9af07dc495",
           "name": "Multiscale 4",
           "path": {
             "type": "zarr",
@@ -58,7 +58,7 @@
         },
         {
           "type": "multiscale",
-          "id": "d7659fca-12e3-b7cd-392b-45f8ae2a88a4",
+          "id": "9329ad2c-8c8b-4320-c669-24bdf15bb0ac",
           "name": "Multiscale 5",
           "path": {
             "type": "zarr",
@@ -68,7 +68,7 @@
         },
         {
           "type": "multiscale",
-          "id": "073c99e5-1520-ea5d-111c-8f037fa45edd",
+          "id": "13ea0257-6e57-f6ad-4793-02933b0b2ca2",
           "name": "Multiscale 6",
           "path": {
             "type": "zarr",
@@ -78,7 +78,7 @@
         },
         {
           "type": "multiscale",
-          "id": "04802545-77c8-953e-8f4f-45563fe789e9",
+          "id": "4e187eff-0c40-a1e4-9ae4-5533c6ab406b",
           "name": "Multiscale 7",
           "path": {
             "type": "zarr",
@@ -88,7 +88,7 @@
         },
         {
           "type": "multiscale",
-          "id": "1be8325e-2d2d-2578-d3a5-aeb77e30b4cf",
+          "id": "cfcfe49d-ff43-6d88-2880-3b25f40ec04e",
           "name": "Multiscale 8",
           "path": {
             "type": "zarr",
@@ -98,7 +98,7 @@
         },
         {
           "type": "multiscale",
-          "id": "7d94e7e1-f38d-12c7-99af-c3a8c78d424c",
+          "id": "2aeacea5-4d91-3ec4-f176-7186f2dd990a",
           "name": "Multiscale 9",
           "path": {
             "type": "zarr",

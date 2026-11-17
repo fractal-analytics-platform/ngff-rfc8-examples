@@ -1,3 +1,4 @@
+import shutil
 from pathlib import Path
 
 import ngio_collections as ngc
@@ -8,11 +9,13 @@ from rfc8_examples.utils import AXES_YX, create_zarr_array
 
 def main():
     EXAMPLE_DIR = BASE_PATH / Path(__file__).with_suffix("").name
+    print(f"Running {Path(__file__).name}, {EXAMPLE_DIR}")
+    shutil.rmtree(EXAMPLE_DIR, ignore_errors=True)
     EXAMPLE_DIR.mkdir(parents=True, exist_ok=True)
 
-    coord_sys_id = get_uuid("coord-sys-id")
-    multiscale_id = get_uuid("multiscale")
-    collection_id = get_uuid("collection")
+    coord_sys_id = get_uuid("e01-coord-sys-id")
+    multiscale_id = get_uuid("e01-multiscale")
+    collection_id = get_uuid("e01-collection")
 
     multiscale = ngc.new_multiscale(
         id=multiscale_id,

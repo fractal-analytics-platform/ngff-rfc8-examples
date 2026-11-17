@@ -3,12 +3,12 @@
     "ome": {
       "version": "0.9dev4",
       "type": "multiscale",
-      "id": "937e9afc-e48d-5b5c-89e4-c8d0de6f79ee",
-      "name": "Multiscale 3",
+      "id": "aafa7aec-b714-62a9-528d-9b9af07dc495",
+      "name": "Multiscale 4",
       "coordinateSystems": [
         {
           "type": "coordinate_system",
-          "id": "83df17e0-a789-d033-c5fc-49bf303502b9",
+          "id": "29c85b73-77cb-6c2b-80f7-ffaa71156f93",
           "name": "physical",
           "axes": [
             {
@@ -28,11 +28,11 @@
         {
           "input": {
             "type": "multiscale",
-            "ref": "937e9afc-e48d-5b5c-89e4-c8d0de6f79ee"
+            "ref": "aafa7aec-b714-62a9-528d-9b9af07dc495"
           },
           "output": {
             "type": "coordinate_system",
-            "ref": "83df17e0-a789-d033-c5fc-49bf303502b9"
+            "ref": "29c85b73-77cb-6c2b-80f7-ffaa71156f93"
           },
           "type": "scale",
           "scale": [
