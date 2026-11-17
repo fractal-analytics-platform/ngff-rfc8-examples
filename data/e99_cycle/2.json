@@ -8,6 +8,7 @@
       {
         "name": "Collection 1",
         "type": "collection",
+        "id": 1,
         "path": {
           "type": "json",
           "format": "relative",
