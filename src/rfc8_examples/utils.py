@@ -6,10 +6,16 @@ from pathlib import Path
 
 import numpy as np
 import zarr
+import ngio_collections as ngc
 
 _RND = random.Random()
 _RND.seed(1234567)
 
+
+AXES_YX = [
+    ngc.Axis(name="y", type="space", unit="micrometer"),
+    ngc.Axis(name="x", type="space", unit="micrometer"),
+]
 
 def get_uuid(source: str | bytes | dict | None = None) -> str:
     if source is None:
