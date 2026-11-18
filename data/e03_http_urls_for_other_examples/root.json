@@ -10,9 +10,9 @@
         "id": "f1ad8c77-7106-b1d3-1019-533c88eeb52e",
         "name": "My Collection",
         "path": {
-          "type": "https://fractal-analytics-platform.github.io/ngff-extensions/node-path-http",
-          "href": "https://raw.githubusercontent.com/fractal-analytics-platform/ngff-rfc8-examples/main/data/e01_inlined_multiscale",
-          "document_type": "zarr"
+          "type": "zarr",
+          "format": "absolute",
+          "href": "https://raw.githubusercontent.com/fractal-analytics-platform/ngff-rfc8-examples/revision/data/e01_inlined_multiscale"
         }
       },
       {
@@ -20,9 +20,9 @@
         "id": "5a563561-045a-c4b3-21d3-47caaf2213d2",
         "name": "My Collection",
         "path": {
-          "type": "https://fractal-analytics-platform.github.io/ngff-extensions/node-path-http",
-          "href": "https://raw.githubusercontent.com/fractal-analytics-platform/ngff-rfc8-examples/main/data/e02_distributed_multiscales",
-          "document_type": "zarr"
+          "type": "zarr",
+          "format": "absolute",
+          "href": "https://raw.githubusercontent.com/fractal-analytics-platform/ngff-rfc8-examples/revision/data/e02_distributed_multiscales"
         }
       }
     ]

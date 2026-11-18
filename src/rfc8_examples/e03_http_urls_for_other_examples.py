@@ -29,9 +29,9 @@ def main():
                     "id": e01_ome["id"],
                     "name": e01_ome["name"],
                     "path": {
-                        "type": "https://fractal-analytics-platform.github.io/ngff-extensions/node-path-http",
-                        "href": "https://raw.githubusercontent.com/fractal-analytics-platform/ngff-rfc8-examples/main/data/e01_inlined_multiscale",
-                        "document_type": "zarr",
+                        "type": "zarr",
+                        "format": "absolute",
+                        "href": "https://raw.githubusercontent.com/fractal-analytics-platform/ngff-rfc8-examples/revision/data/e01_inlined_multiscale",
                     },
                 },
                 {
@@ -39,9 +39,9 @@ def main():
                     "id": e02_ome["id"],
                     "name": e02_ome["name"],
                     "path": {
-                        "type": "https://fractal-analytics-platform.github.io/ngff-extensions/node-path-http",
-                        "href": "https://raw.githubusercontent.com/fractal-analytics-platform/ngff-rfc8-examples/main/data/e02_distributed_multiscales",
-                        "document_type": "zarr",
+                        "type": "zarr",
+                        "format": "absolute",
+                        "href": "https://raw.githubusercontent.com/fractal-analytics-platform/ngff-rfc8-examples/revision/data/e02_distributed_multiscales",
                     },
                 },
             ],
