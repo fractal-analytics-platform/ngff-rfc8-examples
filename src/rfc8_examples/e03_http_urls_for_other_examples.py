@@ -30,7 +30,7 @@ def main():
                     "name": e01_ome["name"],
                     "path": {
                         "type": "zarr",
-                        "format": "absolute",
+                        "format": "http",
                         "href": "https://raw.githubusercontent.com/fractal-analytics-platform/ngff-rfc8-examples/revision/data/e01_inlined_multiscale",
                     },
                 },
@@ -40,7 +40,7 @@ def main():
                     "name": e02_ome["name"],
                     "path": {
                         "type": "zarr",
-                        "format": "absolute",
+                        "format": "http",
                         "href": "https://raw.githubusercontent.com/fractal-analytics-platform/ngff-rfc8-examples/revision/data/e02_distributed_multiscales",
                     },
                 },
