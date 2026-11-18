@@ -8,8 +8,9 @@ Run with: pixi run python examples/v05_plate_to_multi_doc.py
 
 import csv
 import shutil
-from pathlib import Path
 import urllib.parse
+from pathlib import Path
+
 import ngio_collections as ngc
 import requests
 
@@ -51,6 +52,12 @@ def build_multiscale(
     return node
 
 
+def add_trailing_slash(url: str) -> str:
+    if url.endswith("/"):
+        return url
+    else:
+        return f"{url}/"
+
 def write_image(zarr_url: str, base_path: Path, ome_attrs: dict):
 
     img_name = str(Path(zarr_url).stem).replace(".zarr", "")
@@ -63,7 +70,11 @@ def write_image(zarr_url: str, base_path: Path, ome_attrs: dict):
         for ax in ms_json["axes"]
     ]
     # paths are http URLs to the datasets within the multiscale image
-    ds_paths = [urllib.parse.urljoin(zarr_url, ds["path"]) for ds in ms_json["datasets"]]
+    # The additional trailing slash is needed so that `urljoin` does not strip the last part of the base URL
+    ds_paths = [
+        urllib.parse.urljoin(add_trailing_slash(zarr_url), ds["path"])
+        for ds in ms_json["datasets"]
+    ]
     print("dataset paths", ds_paths)
     scales = [ds["coordinateTransformations"][0]["scale"] for ds in ms_json["datasets"]]
 

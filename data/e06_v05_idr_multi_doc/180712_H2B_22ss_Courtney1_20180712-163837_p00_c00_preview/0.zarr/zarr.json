@@ -40,7 +40,7 @@
           "path": {
             "type": "zarr",
             "format": "http",
-            "href": "https://livingobjects.ebi.ac.uk/idr/zarr/v0.5/idr0051/180712_H2B_22ss_Courtney1_20180712-163837_p00_c00_preview.zarr/0"
+            "href": "https://livingobjects.ebi.ac.uk/idr/zarr/v0.5/idr0051/180712_H2B_22ss_Courtney1_20180712-163837_p00_c00_preview.zarr/0/0"
           },
           "downsamplingTransformations": [
             {
@@ -60,7 +60,7 @@
           "path": {
             "type": "zarr",
             "format": "http",
-            "href": "https://livingobjects.ebi.ac.uk/idr/zarr/v0.5/idr0051/180712_H2B_22ss_Courtney1_20180712-163837_p00_c00_preview.zarr/1"
+            "href": "https://livingobjects.ebi.ac.uk/idr/zarr/v0.5/idr0051/180712_H2B_22ss_Courtney1_20180712-163837_p00_c00_preview.zarr/0/1"
           },
           "downsamplingTransformations": [
             {

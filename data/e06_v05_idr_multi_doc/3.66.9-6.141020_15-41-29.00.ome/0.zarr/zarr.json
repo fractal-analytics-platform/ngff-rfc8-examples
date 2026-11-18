@@ -40,7 +40,7 @@
           "path": {
             "type": "zarr",
             "format": "http",
-            "href": "https://livingobjects.ebi.ac.uk/idr/zarr/v0.5/idr0026/3.66.9-6.141020_15-41-29.00.ome.zarr/0"
+            "href": "https://livingobjects.ebi.ac.uk/idr/zarr/v0.5/idr0026/3.66.9-6.141020_15-41-29.00.ome.zarr/0/0"
           },
           "downsamplingTransformations": [
             {
@@ -60,7 +60,7 @@
           "path": {
             "type": "zarr",
             "format": "http",
-            "href": "https://livingobjects.ebi.ac.uk/idr/zarr/v0.5/idr0026/3.66.9-6.141020_15-41-29.00.ome.zarr/1"
+            "href": "https://livingobjects.ebi.ac.uk/idr/zarr/v0.5/idr0026/3.66.9-6.141020_15-41-29.00.ome.zarr/0/1"
           },
           "downsamplingTransformations": [
             {

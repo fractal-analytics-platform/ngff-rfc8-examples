@@ -34,7 +34,7 @@
           "path": {
             "type": "zarr",
             "format": "http",
-            "href": "https://livingobjects.ebi.ac.uk/idr/zarr/v0.5/idr0033A/BR00109990_C2.zarr/0"
+            "href": "https://livingobjects.ebi.ac.uk/idr/zarr/v0.5/idr0033A/BR00109990_C2.zarr/1/0"
           },
           "downsamplingTransformations": [
             {
@@ -52,7 +52,7 @@
           "path": {
             "type": "zarr",
             "format": "http",
-            "href": "https://livingobjects.ebi.ac.uk/idr/zarr/v0.5/idr0033A/BR00109990_C2.zarr/1"
+            "href": "https://livingobjects.ebi.ac.uk/idr/zarr/v0.5/idr0033A/BR00109990_C2.zarr/1/1"
           },
           "downsamplingTransformations": [
             {
@@ -70,7 +70,7 @@
           "path": {
             "type": "zarr",
             "format": "http",
-            "href": "https://livingobjects.ebi.ac.uk/idr/zarr/v0.5/idr0033A/BR00109990_C2.zarr/2"
+            "href": "https://livingobjects.ebi.ac.uk/idr/zarr/v0.5/idr0033A/BR00109990_C2.zarr/1/2"
           },
           "downsamplingTransformations": [
             {
@@ -88,7 +88,7 @@
           "path": {
             "type": "zarr",
             "format": "http",
-            "href": "https://livingobjects.ebi.ac.uk/idr/zarr/v0.5/idr0033A/BR00109990_C2.zarr/3"
+            "href": "https://livingobjects.ebi.ac.uk/idr/zarr/v0.5/idr0033A/BR00109990_C2.zarr/1/3"
           },
           "downsamplingTransformations": [
             {
@@ -106,7 +106,7 @@
           "path": {
             "type": "zarr",
             "format": "http",
-            "href": "https://livingobjects.ebi.ac.uk/idr/zarr/v0.5/idr0033A/BR00109990_C2.zarr/4"
+            "href": "https://livingobjects.ebi.ac.uk/idr/zarr/v0.5/idr0033A/BR00109990_C2.zarr/1/4"
           },
           "downsamplingTransformations": [
             {
@@ -124,7 +124,7 @@
           "path": {
             "type": "zarr",
             "format": "http",
-            "href": "https://livingobjects.ebi.ac.uk/idr/zarr/v0.5/idr0033A/BR00109990_C2.zarr/5"
+            "href": "https://livingobjects.ebi.ac.uk/idr/zarr/v0.5/idr0033A/BR00109990_C2.zarr/1/5"
           },
           "downsamplingTransformations": [
             {

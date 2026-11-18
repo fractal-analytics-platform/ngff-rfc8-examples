@@ -39,7 +39,7 @@
           "path": {
             "type": "zarr",
             "format": "http",
-            "href": "https://livingobjects.ebi.ac.uk/idr/zarr/v0.5/idr0050/s0"
+            "href": "https://livingobjects.ebi.ac.uk/idr/zarr/v0.5/idr0050/4995115.zarr/s0"
           },
           "downsamplingTransformations": [
             {
@@ -58,7 +58,7 @@
           "path": {
             "type": "zarr",
             "format": "http",
-            "href": "https://livingobjects.ebi.ac.uk/idr/zarr/v0.5/idr0050/s1"
+            "href": "https://livingobjects.ebi.ac.uk/idr/zarr/v0.5/idr0050/4995115.zarr/s1"
           },
           "downsamplingTransformations": [
             {
@@ -77,7 +77,7 @@
           "path": {
             "type": "zarr",
             "format": "http",
-            "href": "https://livingobjects.ebi.ac.uk/idr/zarr/v0.5/idr0050/s2"
+            "href": "https://livingobjects.ebi.ac.uk/idr/zarr/v0.5/idr0050/4995115.zarr/s2"
           },
           "downsamplingTransformations": [
             {
@@ -96,7 +96,7 @@
           "path": {
             "type": "zarr",
             "format": "http",
-            "href": "https://livingobjects.ebi.ac.uk/idr/zarr/v0.5/idr0050/s3"
+            "href": "https://livingobjects.ebi.ac.uk/idr/zarr/v0.5/idr0050/4995115.zarr/s3"
           },
           "downsamplingTransformations": [
             {
@@ -115,7 +115,7 @@
           "path": {
             "type": "zarr",
             "format": "http",
-            "href": "https://livingobjects.ebi.ac.uk/idr/zarr/v0.5/idr0050/s4"
+            "href": "https://livingobjects.ebi.ac.uk/idr/zarr/v0.5/idr0050/4995115.zarr/s4"
           },
           "downsamplingTransformations": [
             {
