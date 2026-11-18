@@ -7,30 +7,15 @@ Run with: pixi run python examples/v05_plate_to_multi_doc.py
 """
 
 import csv
+import shutil
 from pathlib import Path
-
+import urllib.parse
 import ngio_collections as ngc
 import requests
 
 from rfc8_examples import BASE_PATH
 
-EXAMPLE_DIR = BASE_PATH / Path(__file__).with_suffix("").name
-
 idr_url = "https://raw.githubusercontent.com/IDR/ome-ngff-samples/refs/heads/main/_data/table.csv"
-
-
-def single_scales(prefix: str, paths: list[str]) -> tuple[ngc.Node, ...]:
-    nodes = []
-    for i, ss_path in enumerate(paths):
-        nodes.append(
-            ngc.new_node(
-                "singlescale",
-                id=f"{prefix}_scale{i}",
-                name=f"{prefix}_scale{i}",
-                ref=ngc.Reference(path=ngc.ZarrPath(path=ss_path)),
-            )
-        )
-    return tuple(nodes)
 
 
 def build_multiscale(
@@ -38,34 +23,31 @@ def build_multiscale(
     paths: list[str],
     scales: list[list[float]],
     axes: list[ngc.Axis],
-    extra_attr: ngc.AnyAttribute | None = None,
 ) -> ngc.Node:
-    node = ngc.new_node(
-        "multiscale", id=prefix, name=prefix, children=single_scales(prefix, paths)
+
+
+    arrays = [
+        ngc.MultiscaleArray(
+            path=ngc.ZarrPath(
+                format="http",
+                href=paths[level_index],
+            ),
+            downsamplingTransformations=([ngc.ScaleDownsampling(scale=factor_list)]),
+        )
+        for level_index, factor_list in enumerate(scales)
+    ]
+ 
+
+    node = ngc.new_multiscale(
+        id=prefix,
+        name=prefix,
+        # The multiscale defines the coordinate system its single scales map into.
+        coordinate_systems=[ngc.CoordinateSystem(id=f"{prefix}_space", axes=axes)],
+        coordinate_transformations=[],
+        arrays=arrays,
     )
 
-    # The multiscale defines the coordinate system its single scales map into.
-    node = node.set_attr(
-        ngc.CoordinateSystemsAttribute(
-            [ngc.CoordinateSystem(id=f"{prefix}_space", axes=axes)]
-        )
-    )
-    if extra_attr is not None:
-        node = node.set_attr(extra_attr)
 
-    # Each single scale maps its array onto the shared coordinate system.
-    for level, factor_list in enumerate(scales):
-        node = node.find(f"{prefix}_scale{level}").set_attr(
-            ngc.CoordinateTransformationsAttribute(
-                [
-                    ngc.ScaleTransformation(
-                        input=ngc.ReferenceObj(id=f"{prefix}_scale{level}"),
-                        output=ngc.ReferenceObj(id=f"{prefix}_space"),
-                        scale=factor_list,
-                    )
-                ]
-            )
-        )
     return node
 
 
@@ -81,7 +63,7 @@ def write_image(zarr_url: str, base_path: Path, ome_attrs: dict):
         for ax in ms_json["axes"]
     ]
     # paths are http URLs to the datasets within the multiscale image
-    ds_paths = [str(Path(zarr_url) / ds["path"]) for ds in ms_json["datasets"]]
+    ds_paths = [urllib.parse.urljoin(zarr_url, ds["path"]) for ds in ms_json["datasets"]]
     print("dataset paths", ds_paths)
     scales = [ds["coordinateTransformations"][0]["scale"] for ds in ms_json["datasets"]]
 
@@ -111,7 +93,7 @@ def build_collection(base_path: Path) -> ngc.Node:
         for row in csv_rows[1:]
         if row[version_col] == "0.5" and row[wells_col] == ""
     ]
-    idr_collection_node = ngc.new_node("collection", id="idr_images", name="idr_images")
+    idr_collection_node = ngc.new_collection(id="idr_images", name="idr_images")
 
     # for each row, we load the zarr json...
     for index, row in enumerate(v05_image_rows):
@@ -121,9 +103,7 @@ def build_collection(base_path: Path) -> ngc.Node:
 
         if "bioformats2raw.layout" in ome_attrs:
             img_name = str(Path(zarr_url).stem).replace(".zarr", "")
-            bf_node = ngc.new_node(
-                "collection", id=f"{index}_bf2raw", name=f"{index}_bf2raw"
-            )
+            bf_node = ngc.new_collection(id=f"{index}_bf2raw", name=f"{index}_bf2raw")
             series = 0
             while True:
                 try:
@@ -134,7 +114,7 @@ def build_collection(base_path: Path) -> ngc.Node:
                     rf_image = write_image(
                         f"{zarr_url}/{series}", f"{base_path}/{img_name}", ome_attrs
                     )
-                    bf_node = bf_node.add_ref(rf_image)
+                    bf_node = bf_node.add_external(rf_image)
                 except Exception as e:  # noqa: BLE001
                     print(f"Error writing image {img_name} series {series}: {e}")
                     break
@@ -144,12 +124,16 @@ def build_collection(base_path: Path) -> ngc.Node:
 
         else:
             rf_image = write_image(zarr_url, base_path, ome_attrs)
-            idr_collection_node = idr_collection_node.add_ref(rf_image)
+            idr_collection_node = idr_collection_node.add_external(rf_image)
 
     return idr_collection_node
 
 
 def main() -> None:
+    EXAMPLE_DIR = BASE_PATH / Path(__file__).with_suffix("").name
+    print(f"Running {Path(__file__).name}, {EXAMPLE_DIR}")
+    shutil.rmtree(EXAMPLE_DIR, ignore_errors=True)
+    EXAMPLE_DIR.mkdir(parents=True, exist_ok=True)
     idr_collection_node = build_collection(EXAMPLE_DIR)
 
     url = str(EXAMPLE_DIR / "collection.json")

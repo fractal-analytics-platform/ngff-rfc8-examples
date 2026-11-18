@@ -1,0 +1,83 @@
+{
+  "attributes": {
+    "ome": {
+      "version": "0.9dev4",
+      "type": "multiscale",
+      "id": "0",
+      "name": "0",
+      "coordinateSystems": [
+        {
+          "type": "coordinate_system",
+          "id": "0_space",
+          "axes": [
+            {
+              "name": "t",
+              "type": "time"
+            },
+            {
+              "name": "c",
+              "type": "channel"
+            },
+            {
+              "name": "z",
+              "type": "space"
+            },
+            {
+              "name": "y",
+              "type": "space"
+            },
+            {
+              "name": "x",
+              "type": "space"
+            }
+          ]
+        }
+      ],
+      "coordinateTransformations": [],
+      "data": [
+        {
+          "type": "array",
+          "path": {
+            "type": "zarr",
+            "format": "http",
+            "href": "https://livingobjects.ebi.ac.uk/idr/zarr/v0.5/idr0051/180712_H2B_22ss_Courtney1_20180712-163837_p00_c00_preview.zarr/0"
+          },
+          "downsamplingTransformations": [
+            {
+              "type": "scale",
+              "scale": [
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "type": "array",
+          "path": {
+            "type": "zarr",
+            "format": "http",
+            "href": "https://livingobjects.ebi.ac.uk/idr/zarr/v0.5/idr0051/180712_H2B_22ss_Courtney1_20180712-163837_p00_c00_preview.zarr/1"
+          },
+          "downsamplingTransformations": [
+            {
+              "type": "scale",
+              "scale": [
+                1.0,
+                1.0,
+                1.0,
+                2.0,
+                2.0
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "zarr_format": 3,
+  "node_type": "group"
+}

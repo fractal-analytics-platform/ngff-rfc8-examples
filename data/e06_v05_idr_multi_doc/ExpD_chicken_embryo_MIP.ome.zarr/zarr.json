@@ -1,0 +1,169 @@
+{
+  "attributes": {
+    "ome": {
+      "version": "0.9dev4",
+      "type": "multiscale",
+      "id": "ExpD_chicken_embryo_MIP.ome",
+      "name": "ExpD_chicken_embryo_MIP.ome",
+      "coordinateSystems": [
+        {
+          "type": "coordinate_system",
+          "id": "ExpD_chicken_embryo_MIP.ome_space",
+          "axes": [
+            {
+              "name": "y",
+              "type": "space",
+              "unit": "micrometer"
+            },
+            {
+              "name": "x",
+              "type": "space",
+              "unit": "micrometer"
+            }
+          ]
+        }
+      ],
+      "coordinateTransformations": [],
+      "data": [
+        {
+          "type": "array",
+          "path": {
+            "type": "zarr",
+            "format": "http",
+            "href": "https://livingobjects.ebi.ac.uk/idr/zarr/v0.5/idr0066/0"
+          },
+          "downsamplingTransformations": [
+            {
+              "type": "scale",
+              "scale": [
+                1.6,
+                1.6
+              ]
+            }
+          ]
+        },
+        {
+          "type": "array",
+          "path": {
+            "type": "zarr",
+            "format": "http",
+            "href": "https://livingobjects.ebi.ac.uk/idr/zarr/v0.5/idr0066/1"
+          },
+          "downsamplingTransformations": [
+            {
+              "type": "scale",
+              "scale": [
+                3.2,
+                3.2
+              ]
+            }
+          ]
+        },
+        {
+          "type": "array",
+          "path": {
+            "type": "zarr",
+            "format": "http",
+            "href": "https://livingobjects.ebi.ac.uk/idr/zarr/v0.5/idr0066/2"
+          },
+          "downsamplingTransformations": [
+            {
+              "type": "scale",
+              "scale": [
+                6.4,
+                6.4
+              ]
+            }
+          ]
+        },
+        {
+          "type": "array",
+          "path": {
+            "type": "zarr",
+            "format": "http",
+            "href": "https://livingobjects.ebi.ac.uk/idr/zarr/v0.5/idr0066/3"
+          },
+          "downsamplingTransformations": [
+            {
+              "type": "scale",
+              "scale": [
+                12.8,
+                12.8
+              ]
+            }
+          ]
+        },
+        {
+          "type": "array",
+          "path": {
+            "type": "zarr",
+            "format": "http",
+            "href": "https://livingobjects.ebi.ac.uk/idr/zarr/v0.5/idr0066/4"
+          },
+          "downsamplingTransformations": [
+            {
+              "type": "scale",
+              "scale": [
+                25.6,
+                25.6
+              ]
+            }
+          ]
+        },
+        {
+          "type": "array",
+          "path": {
+            "type": "zarr",
+            "format": "http",
+            "href": "https://livingobjects.ebi.ac.uk/idr/zarr/v0.5/idr0066/5"
+          },
+          "downsamplingTransformations": [
+            {
+              "type": "scale",
+              "scale": [
+                51.2,
+                51.2
+              ]
+            }
+          ]
+        },
+        {
+          "type": "array",
+          "path": {
+            "type": "zarr",
+            "format": "http",
+            "href": "https://livingobjects.ebi.ac.uk/idr/zarr/v0.5/idr0066/6"
+          },
+          "downsamplingTransformations": [
+            {
+              "type": "scale",
+              "scale": [
+                102.4,
+                102.4
+              ]
+            }
+          ]
+        },
+        {
+          "type": "array",
+          "path": {
+            "type": "zarr",
+            "format": "http",
+            "href": "https://livingobjects.ebi.ac.uk/idr/zarr/v0.5/idr0066/7"
+          },
+          "downsamplingTransformations": [
+            {
+              "type": "scale",
+              "scale": [
+                204.8,
+                204.8
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "zarr_format": 3,
+  "node_type": "group"
+}

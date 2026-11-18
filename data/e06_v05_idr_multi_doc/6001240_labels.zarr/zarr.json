@@ -1,0 +1,99 @@
+{
+  "attributes": {
+    "ome": {
+      "version": "0.9dev4",
+      "type": "multiscale",
+      "id": "6001240_labels",
+      "name": "6001240_labels",
+      "coordinateSystems": [
+        {
+          "type": "coordinate_system",
+          "id": "6001240_labels_space",
+          "axes": [
+            {
+              "name": "c",
+              "type": "channel"
+            },
+            {
+              "name": "z",
+              "type": "space",
+              "unit": "micrometer"
+            },
+            {
+              "name": "y",
+              "type": "space",
+              "unit": "micrometer"
+            },
+            {
+              "name": "x",
+              "type": "space",
+              "unit": "micrometer"
+            }
+          ]
+        }
+      ],
+      "coordinateTransformations": [],
+      "data": [
+        {
+          "type": "array",
+          "path": {
+            "type": "zarr",
+            "format": "http",
+            "href": "https://livingobjects.ebi.ac.uk/idr/zarr/v0.5/idr0062A/0"
+          },
+          "downsamplingTransformations": [
+            {
+              "type": "scale",
+              "scale": [
+                1.0,
+                0.5002025531914894,
+                0.3603981534640209,
+                0.3603981534640209
+              ]
+            }
+          ]
+        },
+        {
+          "type": "array",
+          "path": {
+            "type": "zarr",
+            "format": "http",
+            "href": "https://livingobjects.ebi.ac.uk/idr/zarr/v0.5/idr0062A/1"
+          },
+          "downsamplingTransformations": [
+            {
+              "type": "scale",
+              "scale": [
+                1.0,
+                0.5002025531914894,
+                0.7207963069280418,
+                0.7207963069280418
+              ]
+            }
+          ]
+        },
+        {
+          "type": "array",
+          "path": {
+            "type": "zarr",
+            "format": "http",
+            "href": "https://livingobjects.ebi.ac.uk/idr/zarr/v0.5/idr0062A/2"
+          },
+          "downsamplingTransformations": [
+            {
+              "type": "scale",
+              "scale": [
+                1.0,
+                0.5002025531914894,
+                1.4415926138560835,
+                1.4415926138560835
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "zarr_format": 3,
+  "node_type": "group"
+}
