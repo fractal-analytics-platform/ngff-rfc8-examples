@@ -3,7 +3,7 @@ and use it to build an RFC8 plate.
 We write a multi-document RFC8 collection, with each well as a separate document
 and a separate RFC8 collection.json for the plate itself.
 
-Run with: pixi run python examples/v05_plate_to_multi_doc.py
+Run with: uv run src/rfc8_examples/e06_v05_idr_multi_doc.py
 """
 
 import csv
@@ -26,7 +26,6 @@ def build_multiscale(
     axes: list[ngc.Axis],
 ) -> ngc.Node:
 
-
     arrays = [
         ngc.MultiscaleArray(
             path=ngc.ZarrPath(
@@ -37,7 +36,6 @@ def build_multiscale(
         )
         for level_index, factor_list in enumerate(scales)
     ]
- 
 
     node = ngc.new_multiscale(
         id=prefix,
@@ -48,7 +46,6 @@ def build_multiscale(
         arrays=arrays,
     )
 
-
     return node
 
 
@@ -57,6 +54,7 @@ def add_trailing_slash(url: str) -> str:
         return url
     else:
         return f"{url}/"
+
 
 def write_image(zarr_url: str, base_path: Path, ome_attrs: dict):
 
@@ -145,6 +143,7 @@ def main() -> None:
     print(f"Running {Path(__file__).name}, {EXAMPLE_DIR}")
     shutil.rmtree(EXAMPLE_DIR, ignore_errors=True)
     EXAMPLE_DIR.mkdir(parents=True, exist_ok=True)
+
     idr_collection_node = build_collection(EXAMPLE_DIR)
 
     url = str(EXAMPLE_DIR / "collection.json")
