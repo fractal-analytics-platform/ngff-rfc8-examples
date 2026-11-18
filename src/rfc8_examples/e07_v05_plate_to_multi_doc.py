@@ -20,20 +20,6 @@ MAX_COLS = 3
 plate_url = "https://livingobjects.ebi.ac.uk/idr/zarr/v0.5/idr0010/76-45.ome.zarr/"
 
 
-def single_scales(prefix: str, paths: list[str]) -> tuple[ngc.Node, ...]:
-    nodes = []
-    for i, ss_path in enumerate(paths):
-        nodes.append(
-            ngc.new_node(
-                "singlescale",
-                id=f"{prefix}_scale{i}",
-                name=f"{prefix}_scale{i}",
-                ref=ngc.Reference(path=ngc.ZarrPath(path=ss_path)),
-            )
-        )
-    return tuple(nodes)
-
-
 def build_multiscale(
     prefix: str,
     paths: list[str],
@@ -63,6 +49,7 @@ def build_multiscale(
 
     return node
 
+
 def build_collection(base_path: Path) -> ngc.Node:
     """The in-memory tree, detached until `create` writes it."""
 
@@ -75,7 +62,7 @@ def build_collection(base_path: Path) -> ngc.Node:
     col_names = [col["name"] for col in cols_json]
 
     # plate_attrs = {"plate": {"columns": cols_json, "rows": rows_json}} # FIXME
-    plate = ngc.new_collection(id="plate", name="plate") #, attributes=plate_attrs)
+    plate = ngc.new_collection(id="plate", name="plate")  # , attributes=plate_attrs)
 
     # Only process the first 3 wells for demonstration purposes.
     wells_json = plate_json["wells"]
