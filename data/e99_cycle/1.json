@@ -6,8 +6,9 @@
     "name": "Collection 1",
     "nodes": [
       {
-        "name": "Collection 2",
         "type": "collection",
+        "id": "2",
+        "name": "Collection 2",
         "path": {
           "type": "json",
           "format": "relative",

@@ -10,8 +10,10 @@
         "id": "B",
         "type": "collection",
         "nodes": [
-            "id": "A",
-            "type": "collection"
+          {
+            "type": "collection",
+            "id": "A"
+          }
         ]
       }
     ]
