@@ -61,8 +61,9 @@ def build_collection(base_path: Path) -> ngc.Node:
     row_names = [row["name"] for row in rows_json]
     col_names = [col["name"] for col in cols_json]
 
-    # plate_attrs = {"plate": {"columns": cols_json, "rows": rows_json}} # FIXME
-    plate = ngc.new_collection(id="plate", name="plate")  # , attributes=plate_attrs)
+    # FIXME: Re-include HCS attributes through traits
+    # plate_attrs = {"plate": {"columns": cols_json, "rows": rows_json}}
+    plate = ngc.new_collection(id="plate", name="plate")
 
     # Only process the first 3 wells for demonstration purposes.
     wells_json = plate_json["wells"]
