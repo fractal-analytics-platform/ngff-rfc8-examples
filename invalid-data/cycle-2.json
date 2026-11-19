@@ -12,7 +12,7 @@
         "path": {
           "type": "json",
           "format": "relative",
-          "href": "./1.json"
+          "href": "./cycle-1.json"
         }
       }
     ]
