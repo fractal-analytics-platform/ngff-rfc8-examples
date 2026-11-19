@@ -112,9 +112,6 @@ def build_collection(base_path: Path) -> ngc.Node:
 
         print("write_path", write_path)
         rf_well = ngc.create(write_path, well_collection_node, overwrite=True)
-        # well_ref = ngc.open(write_path).ref()  # ReferenceObj(id="image", path=image.zarr)
-
-        # plate = plate.add(well_collection_node)
         plate = plate.add_external(rf_well)
 
     return plate
