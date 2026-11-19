@@ -17,8 +17,8 @@ import requests
 from rfc8_examples import BASE_PATH
 
 # Use smaller numbers if you want to convert fewer wells for testing
-MAX_ROWS = 100
-MAX_COLS = 100
+MAX_ROWS = 2
+MAX_COLS = 2
 
 plate_url = "https://livingobjects.ebi.ac.uk/idr/share/ome2024-ngff-challenge/idr0036/20591.ome.zarr/"
 
