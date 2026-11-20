@@ -45,5 +45,6 @@ def create_zarr_array(path: str | Path, seed: int = 1234567) -> None:
         chunks=(100, 100),
         dtype="f4",
         overwrite=True,
+        dimension_names=["y", "x"]
     )
     z[:, :] = np.random.random((100, 100))
