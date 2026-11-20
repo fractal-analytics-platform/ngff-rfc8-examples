@@ -1,85 +1,68 @@
 {
   "ome": {
-    "version": "0.x",
+    "version": "0.9dev4",
     "type": "collection",
-    "name": "plate",
     "id": "plate",
-    "attributes": {
-      "plate": {
-        "columns": [
-          {
-            "name": "1"
-          },
-          {
-            "name": "2"
-          },
-          {
-            "name": "3"
-          }
-        ],
-        "rows": [
-          {
-            "name": "A"
-          },
-          {
-            "name": "B"
-          }
-        ]
-      }
-    },
+    "name": "plate",
     "nodes": [
       {
         "type": "collection",
-        "name": "wellA1",
         "id": "wellA1",
+        "name": "wellA1",
         "path": {
           "type": "zarr",
-          "path": "./wells/A/1.zarr"
+          "format": "relative",
+          "href": "./wells/A/1.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellA2",
         "id": "wellA2",
+        "name": "wellA2",
         "path": {
           "type": "zarr",
-          "path": "./wells/A/2.zarr"
+          "format": "relative",
+          "href": "./wells/A/2.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellA3",
         "id": "wellA3",
+        "name": "wellA3",
         "path": {
           "type": "zarr",
-          "path": "./wells/A/3.zarr"
+          "format": "relative",
+          "href": "./wells/A/3.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellB1",
         "id": "wellB1",
+        "name": "wellB1",
         "path": {
           "type": "zarr",
-          "path": "./wells/B/1.zarr"
+          "format": "relative",
+          "href": "./wells/B/1.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellB2",
         "id": "wellB2",
+        "name": "wellB2",
         "path": {
           "type": "zarr",
-          "path": "./wells/B/2.zarr"
+          "format": "relative",
+          "href": "./wells/B/2.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellB3",
         "id": "wellB3",
+        "name": "wellB3",
         "path": {
           "type": "zarr",
-          "path": "./wells/B/3.zarr"
+          "format": "relative",
+          "href": "./wells/B/3.zarr"
         }
       }
     ]

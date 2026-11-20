@@ -3,13 +3,13 @@ from pathlib import Path
 
 import ngio_collections as ngc
 
-from rfc8_examples import BASE_PATH, get_uuid4
+from rfc8_examples import BASE_PATH, get_uuid
 from rfc8_examples.utils import create_zarr_array
 
 EXAMPLE_DIR = BASE_PATH / Path(__file__).with_suffix("").name
 
 def _get_singlescales(coord_system_id: int, image_id: str) -> list[ngc.Node]:
-    s0_id = get_uuid4(f"{image_id}-s0")
+    s0_id = get_uuid(f"{image_id}-s0")
     return [
         ngc.new_node(
             node_type="singlescale",
@@ -34,7 +34,7 @@ def _get_image(
     coord_system_id: str,
     attributes: dict | None = None,
 ) -> ngc.Node:
-    image_id =get_uuid4({"name": name, "attributes": attributes})
+    image_id =get_uuid({"name": name, "attributes": attributes})
     _image = ngc.new_node(
         node_type="multiscale",
         id=image_id,
@@ -81,14 +81,14 @@ def _get_children_and_tables(coord_system_id: int, well_label: str) -> list[ngc.
         ),
         ngc.new_node(
             node_type="table",
-            id=get_uuid4("nuclei_measurements" + well_label),
+            id=get_uuid("nuclei_measurements" + well_label),
             name="nuclei_measurements",
         ),
     ]
 
 
 def main():
-    coord_system_id = get_uuid4("coord-system")
+    coord_system_id = get_uuid("coord-system")
 
     root_collection_path = EXAMPLE_DIR
     if Path(root_collection_path).exists():
@@ -107,7 +107,7 @@ def main():
     well_A1 = ngc.new_node(
         "collection",
         name="Well A1",
-        id=get_uuid4("well A1"),
+        id=get_uuid("well A1"),
         children=[],
         attributes={"well": {"column": {"id": "1"}, "row": {"id": "A"}}},
     ).add_ref(*children_A1_ref)
@@ -118,7 +118,7 @@ def main():
     plate = ngc.new_node(
         "collection",
         name="Plate",
-        id=get_uuid4("plate"),
+        id=get_uuid("plate"),
         children=[],
         attributes={
             "plate": {
@@ -135,7 +135,7 @@ def main():
     collection = ngc.new_node(
         "collection",
         name="My dataset",
-        id=get_uuid4("dataset"),
+        id=get_uuid("dataset"),
         children=[plate],
     )
 

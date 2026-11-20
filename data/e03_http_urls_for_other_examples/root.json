@@ -1,35 +1,28 @@
 {
   "ome": {
-    "version": "0.x",
+    "version": "0.9dev4",
     "type": "collection",
-    "name": "http_collection",
-    "id": "http_collection",
+    "name": "Parent Collection",
+    "id": "ebb6f8a3-c74d-a17d-39d7-77c1cdc8cbc4",
     "nodes": [
       {
         "type": "collection",
-        "name": "example1",
-        "id": "example1",
+        "id": "f1ad8c77-7106-b1d3-1019-533c88eeb52e",
+        "name": "My Collection",
         "path": {
-          "type": "json",
-          "path": "https://raw.githubusercontent.com/fractal-analytics-platform/ngff-rfc8-examples/main/data/e01_basic_example/root.json"
+          "type": "zarr",
+          "format": "http",
+          "href": "https://raw.githubusercontent.com/fractal-analytics-platform/ngff-rfc8-examples/revision/data/e01_inlined_multiscale"
         }
       },
       {
         "type": "collection",
-        "name": "example2",
-        "id": "example2",
+        "id": "5a563561-045a-c4b3-21d3-47caaf2213d2",
+        "name": "My Collection",
         "path": {
-          "type": "json",
-          "path": "https://raw.githubusercontent.com/fractal-analytics-platform/ngff-rfc8-examples/main/data/e02_basic_examples_many_images/root.json"
-        }
-      },
-      {
-        "type": "collection",
-        "name": "example4",
-        "id": "example4",
-        "path": {
-          "type": "json",
-          "path": "https://raw.githubusercontent.com/fractal-analytics-platform/ngff-rfc8-examples/main/data/e04_plate_multiple_fields/root.json"
+          "type": "zarr",
+          "format": "http",
+          "href": "https://raw.githubusercontent.com/fractal-analytics-platform/ngff-rfc8-examples/revision/data/e02_distributed_multiscales"
         }
       }
     ]
