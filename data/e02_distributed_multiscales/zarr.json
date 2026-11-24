@@ -1,0 +1,114 @@
+{
+  "attributes": {
+    "ome": {
+      "version": "0.9dev4",
+      "type": "collection",
+      "id": "5a563561-045a-c4b3-21d3-47caaf2213d2",
+      "name": "My Collection",
+      "nodes": [
+        {
+          "type": "multiscale",
+          "id": "2af30595-7e45-a73f-e506-f0771180562c",
+          "name": "Multiscale 0",
+          "path": {
+            "type": "zarr",
+            "format": "relative",
+            "href": "./image-00"
+          }
+        },
+        {
+          "type": "multiscale",
+          "id": "39bb5903-e2b7-00c3-48a0-1d37ae8f9349",
+          "name": "Multiscale 1",
+          "path": {
+            "type": "zarr",
+            "format": "relative",
+            "href": "./image-01"
+          }
+        },
+        {
+          "type": "multiscale",
+          "id": "affc95a7-9c37-5105-049b-34b230c6beff",
+          "name": "Multiscale 2",
+          "path": {
+            "type": "zarr",
+            "format": "relative",
+            "href": "./image-02"
+          }
+        },
+        {
+          "type": "multiscale",
+          "id": "343a4ded-6d2c-a819-c6d6-6cd29a35aa74",
+          "name": "Multiscale 3",
+          "path": {
+            "type": "zarr",
+            "format": "relative",
+            "href": "./image-03"
+          }
+        },
+        {
+          "type": "multiscale",
+          "id": "aafa7aec-b714-62a9-528d-9b9af07dc495",
+          "name": "Multiscale 4",
+          "path": {
+            "type": "zarr",
+            "format": "relative",
+            "href": "./image-04"
+          }
+        },
+        {
+          "type": "multiscale",
+          "id": "9329ad2c-8c8b-4320-c669-24bdf15bb0ac",
+          "name": "Multiscale 5",
+          "path": {
+            "type": "zarr",
+            "format": "relative",
+            "href": "./image-05"
+          }
+        },
+        {
+          "type": "multiscale",
+          "id": "13ea0257-6e57-f6ad-4793-02933b0b2ca2",
+          "name": "Multiscale 6",
+          "path": {
+            "type": "zarr",
+            "format": "relative",
+            "href": "./image-06"
+          }
+        },
+        {
+          "type": "multiscale",
+          "id": "4e187eff-0c40-a1e4-9ae4-5533c6ab406b",
+          "name": "Multiscale 7",
+          "path": {
+            "type": "zarr",
+            "format": "relative",
+            "href": "./image-07"
+          }
+        },
+        {
+          "type": "multiscale",
+          "id": "cfcfe49d-ff43-6d88-2880-3b25f40ec04e",
+          "name": "Multiscale 8",
+          "path": {
+            "type": "zarr",
+            "format": "relative",
+            "href": "./image-08"
+          }
+        },
+        {
+          "type": "multiscale",
+          "id": "2aeacea5-4d91-3ec4-f176-7186f2dd990a",
+          "name": "Multiscale 9",
+          "path": {
+            "type": "zarr",
+            "format": "relative",
+            "href": "./image-09"
+          }
+        }
+      ]
+    }
+  },
+  "zarr_format": 3,
+  "node_type": "group"
+}

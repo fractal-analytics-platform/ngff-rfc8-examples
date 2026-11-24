@@ -1,3592 +1,3848 @@
 {
   "ome": {
-    "version": "0.x",
+    "version": "0.9dev4",
     "type": "collection",
-    "name": "plate",
     "id": "plate",
-    "attributes": {
-      "plate": {
-        "columns": [
-          {
-            "name": "1"
-          },
-          {
-            "name": "2"
-          },
-          {
-            "name": "3"
-          },
-          {
-            "name": "4"
-          },
-          {
-            "name": "5"
-          },
-          {
-            "name": "6"
-          },
-          {
-            "name": "7"
-          },
-          {
-            "name": "8"
-          },
-          {
-            "name": "9"
-          },
-          {
-            "name": "10"
-          },
-          {
-            "name": "11"
-          },
-          {
-            "name": "12"
-          },
-          {
-            "name": "13"
-          },
-          {
-            "name": "14"
-          },
-          {
-            "name": "15"
-          },
-          {
-            "name": "16"
-          },
-          {
-            "name": "17"
-          },
-          {
-            "name": "18"
-          },
-          {
-            "name": "19"
-          },
-          {
-            "name": "20"
-          },
-          {
-            "name": "21"
-          },
-          {
-            "name": "22"
-          },
-          {
-            "name": "23"
-          },
-          {
-            "name": "24"
-          }
-        ],
-        "rows": [
-          {
-            "name": "A"
-          },
-          {
-            "name": "B"
-          },
-          {
-            "name": "C"
-          },
-          {
-            "name": "D"
-          },
-          {
-            "name": "E"
-          },
-          {
-            "name": "F"
-          },
-          {
-            "name": "G"
-          },
-          {
-            "name": "H"
-          },
-          {
-            "name": "I"
-          },
-          {
-            "name": "J"
-          },
-          {
-            "name": "K"
-          },
-          {
-            "name": "L"
-          },
-          {
-            "name": "M"
-          },
-          {
-            "name": "N"
-          },
-          {
-            "name": "O"
-          },
-          {
-            "name": "P"
-          }
-        ]
-      }
-    },
+    "name": "plate",
     "nodes": [
       {
         "type": "collection",
-        "name": "wellA1",
         "id": "wellA1",
+        "name": "wellA1",
         "path": {
           "type": "zarr",
-          "path": "./wells/A/1.zarr"
+          "format": "relative",
+          "href": "./wells/A/1.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellA2",
         "id": "wellA2",
+        "name": "wellA2",
         "path": {
           "type": "zarr",
-          "path": "./wells/A/2.zarr"
+          "format": "relative",
+          "href": "./wells/A/2.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellA3",
         "id": "wellA3",
+        "name": "wellA3",
         "path": {
           "type": "zarr",
-          "path": "./wells/A/3.zarr"
+          "format": "relative",
+          "href": "./wells/A/3.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellA4",
         "id": "wellA4",
+        "name": "wellA4",
         "path": {
           "type": "zarr",
-          "path": "./wells/A/4.zarr"
+          "format": "relative",
+          "href": "./wells/A/4.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellA5",
         "id": "wellA5",
+        "name": "wellA5",
         "path": {
           "type": "zarr",
-          "path": "./wells/A/5.zarr"
+          "format": "relative",
+          "href": "./wells/A/5.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellA6",
         "id": "wellA6",
+        "name": "wellA6",
         "path": {
           "type": "zarr",
-          "path": "./wells/A/6.zarr"
+          "format": "relative",
+          "href": "./wells/A/6.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellA7",
         "id": "wellA7",
+        "name": "wellA7",
         "path": {
           "type": "zarr",
-          "path": "./wells/A/7.zarr"
+          "format": "relative",
+          "href": "./wells/A/7.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellA8",
         "id": "wellA8",
+        "name": "wellA8",
         "path": {
           "type": "zarr",
-          "path": "./wells/A/8.zarr"
+          "format": "relative",
+          "href": "./wells/A/8.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellA9",
         "id": "wellA9",
+        "name": "wellA9",
         "path": {
           "type": "zarr",
-          "path": "./wells/A/9.zarr"
+          "format": "relative",
+          "href": "./wells/A/9.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellA10",
         "id": "wellA10",
+        "name": "wellA10",
         "path": {
           "type": "zarr",
-          "path": "./wells/A/10.zarr"
+          "format": "relative",
+          "href": "./wells/A/10.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellA11",
         "id": "wellA11",
+        "name": "wellA11",
         "path": {
           "type": "zarr",
-          "path": "./wells/A/11.zarr"
+          "format": "relative",
+          "href": "./wells/A/11.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellA12",
         "id": "wellA12",
+        "name": "wellA12",
         "path": {
           "type": "zarr",
-          "path": "./wells/A/12.zarr"
+          "format": "relative",
+          "href": "./wells/A/12.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellA13",
         "id": "wellA13",
+        "name": "wellA13",
         "path": {
           "type": "zarr",
-          "path": "./wells/A/13.zarr"
+          "format": "relative",
+          "href": "./wells/A/13.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellA14",
         "id": "wellA14",
+        "name": "wellA14",
         "path": {
           "type": "zarr",
-          "path": "./wells/A/14.zarr"
+          "format": "relative",
+          "href": "./wells/A/14.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellA15",
         "id": "wellA15",
+        "name": "wellA15",
         "path": {
           "type": "zarr",
-          "path": "./wells/A/15.zarr"
+          "format": "relative",
+          "href": "./wells/A/15.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellA16",
         "id": "wellA16",
+        "name": "wellA16",
         "path": {
           "type": "zarr",
-          "path": "./wells/A/16.zarr"
+          "format": "relative",
+          "href": "./wells/A/16.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellA17",
         "id": "wellA17",
+        "name": "wellA17",
         "path": {
           "type": "zarr",
-          "path": "./wells/A/17.zarr"
+          "format": "relative",
+          "href": "./wells/A/17.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellA18",
         "id": "wellA18",
+        "name": "wellA18",
         "path": {
           "type": "zarr",
-          "path": "./wells/A/18.zarr"
+          "format": "relative",
+          "href": "./wells/A/18.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellA19",
         "id": "wellA19",
+        "name": "wellA19",
         "path": {
           "type": "zarr",
-          "path": "./wells/A/19.zarr"
+          "format": "relative",
+          "href": "./wells/A/19.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellA20",
         "id": "wellA20",
+        "name": "wellA20",
         "path": {
           "type": "zarr",
-          "path": "./wells/A/20.zarr"
+          "format": "relative",
+          "href": "./wells/A/20.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellA21",
         "id": "wellA21",
+        "name": "wellA21",
         "path": {
           "type": "zarr",
-          "path": "./wells/A/21.zarr"
+          "format": "relative",
+          "href": "./wells/A/21.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellA22",
         "id": "wellA22",
+        "name": "wellA22",
         "path": {
           "type": "zarr",
-          "path": "./wells/A/22.zarr"
+          "format": "relative",
+          "href": "./wells/A/22.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellA23",
         "id": "wellA23",
+        "name": "wellA23",
         "path": {
           "type": "zarr",
-          "path": "./wells/A/23.zarr"
+          "format": "relative",
+          "href": "./wells/A/23.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellA24",
         "id": "wellA24",
+        "name": "wellA24",
         "path": {
           "type": "zarr",
-          "path": "./wells/A/24.zarr"
+          "format": "relative",
+          "href": "./wells/A/24.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellB1",
         "id": "wellB1",
+        "name": "wellB1",
         "path": {
           "type": "zarr",
-          "path": "./wells/B/1.zarr"
+          "format": "relative",
+          "href": "./wells/B/1.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellB2",
         "id": "wellB2",
+        "name": "wellB2",
         "path": {
           "type": "zarr",
-          "path": "./wells/B/2.zarr"
+          "format": "relative",
+          "href": "./wells/B/2.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellB3",
         "id": "wellB3",
+        "name": "wellB3",
         "path": {
           "type": "zarr",
-          "path": "./wells/B/3.zarr"
+          "format": "relative",
+          "href": "./wells/B/3.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellB4",
         "id": "wellB4",
+        "name": "wellB4",
         "path": {
           "type": "zarr",
-          "path": "./wells/B/4.zarr"
+          "format": "relative",
+          "href": "./wells/B/4.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellB5",
         "id": "wellB5",
+        "name": "wellB5",
         "path": {
           "type": "zarr",
-          "path": "./wells/B/5.zarr"
+          "format": "relative",
+          "href": "./wells/B/5.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellB6",
         "id": "wellB6",
+        "name": "wellB6",
         "path": {
           "type": "zarr",
-          "path": "./wells/B/6.zarr"
+          "format": "relative",
+          "href": "./wells/B/6.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellB7",
         "id": "wellB7",
+        "name": "wellB7",
         "path": {
           "type": "zarr",
-          "path": "./wells/B/7.zarr"
+          "format": "relative",
+          "href": "./wells/B/7.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellB8",
         "id": "wellB8",
+        "name": "wellB8",
         "path": {
           "type": "zarr",
-          "path": "./wells/B/8.zarr"
+          "format": "relative",
+          "href": "./wells/B/8.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellB9",
         "id": "wellB9",
+        "name": "wellB9",
         "path": {
           "type": "zarr",
-          "path": "./wells/B/9.zarr"
+          "format": "relative",
+          "href": "./wells/B/9.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellB10",
         "id": "wellB10",
+        "name": "wellB10",
         "path": {
           "type": "zarr",
-          "path": "./wells/B/10.zarr"
+          "format": "relative",
+          "href": "./wells/B/10.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellB11",
         "id": "wellB11",
+        "name": "wellB11",
         "path": {
           "type": "zarr",
-          "path": "./wells/B/11.zarr"
+          "format": "relative",
+          "href": "./wells/B/11.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellB12",
         "id": "wellB12",
+        "name": "wellB12",
         "path": {
           "type": "zarr",
-          "path": "./wells/B/12.zarr"
+          "format": "relative",
+          "href": "./wells/B/12.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellB13",
         "id": "wellB13",
+        "name": "wellB13",
         "path": {
           "type": "zarr",
-          "path": "./wells/B/13.zarr"
+          "format": "relative",
+          "href": "./wells/B/13.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellB14",
         "id": "wellB14",
+        "name": "wellB14",
         "path": {
           "type": "zarr",
-          "path": "./wells/B/14.zarr"
+          "format": "relative",
+          "href": "./wells/B/14.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellB15",
         "id": "wellB15",
+        "name": "wellB15",
         "path": {
           "type": "zarr",
-          "path": "./wells/B/15.zarr"
+          "format": "relative",
+          "href": "./wells/B/15.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellB16",
         "id": "wellB16",
+        "name": "wellB16",
         "path": {
           "type": "zarr",
-          "path": "./wells/B/16.zarr"
+          "format": "relative",
+          "href": "./wells/B/16.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellB17",
         "id": "wellB17",
+        "name": "wellB17",
         "path": {
           "type": "zarr",
-          "path": "./wells/B/17.zarr"
+          "format": "relative",
+          "href": "./wells/B/17.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellB18",
         "id": "wellB18",
+        "name": "wellB18",
         "path": {
           "type": "zarr",
-          "path": "./wells/B/18.zarr"
+          "format": "relative",
+          "href": "./wells/B/18.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellB19",
         "id": "wellB19",
+        "name": "wellB19",
         "path": {
           "type": "zarr",
-          "path": "./wells/B/19.zarr"
+          "format": "relative",
+          "href": "./wells/B/19.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellB20",
         "id": "wellB20",
+        "name": "wellB20",
         "path": {
           "type": "zarr",
-          "path": "./wells/B/20.zarr"
+          "format": "relative",
+          "href": "./wells/B/20.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellB21",
         "id": "wellB21",
+        "name": "wellB21",
         "path": {
           "type": "zarr",
-          "path": "./wells/B/21.zarr"
+          "format": "relative",
+          "href": "./wells/B/21.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellB22",
         "id": "wellB22",
+        "name": "wellB22",
         "path": {
           "type": "zarr",
-          "path": "./wells/B/22.zarr"
+          "format": "relative",
+          "href": "./wells/B/22.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellB23",
         "id": "wellB23",
+        "name": "wellB23",
         "path": {
           "type": "zarr",
-          "path": "./wells/B/23.zarr"
+          "format": "relative",
+          "href": "./wells/B/23.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellB24",
         "id": "wellB24",
+        "name": "wellB24",
         "path": {
           "type": "zarr",
-          "path": "./wells/B/24.zarr"
+          "format": "relative",
+          "href": "./wells/B/24.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellC1",
         "id": "wellC1",
+        "name": "wellC1",
         "path": {
           "type": "zarr",
-          "path": "./wells/C/1.zarr"
+          "format": "relative",
+          "href": "./wells/C/1.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellC2",
         "id": "wellC2",
+        "name": "wellC2",
         "path": {
           "type": "zarr",
-          "path": "./wells/C/2.zarr"
+          "format": "relative",
+          "href": "./wells/C/2.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellC3",
         "id": "wellC3",
+        "name": "wellC3",
         "path": {
           "type": "zarr",
-          "path": "./wells/C/3.zarr"
+          "format": "relative",
+          "href": "./wells/C/3.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellC4",
         "id": "wellC4",
+        "name": "wellC4",
         "path": {
           "type": "zarr",
-          "path": "./wells/C/4.zarr"
+          "format": "relative",
+          "href": "./wells/C/4.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellC5",
         "id": "wellC5",
+        "name": "wellC5",
         "path": {
           "type": "zarr",
-          "path": "./wells/C/5.zarr"
+          "format": "relative",
+          "href": "./wells/C/5.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellC6",
         "id": "wellC6",
+        "name": "wellC6",
         "path": {
           "type": "zarr",
-          "path": "./wells/C/6.zarr"
+          "format": "relative",
+          "href": "./wells/C/6.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellC7",
         "id": "wellC7",
+        "name": "wellC7",
         "path": {
           "type": "zarr",
-          "path": "./wells/C/7.zarr"
+          "format": "relative",
+          "href": "./wells/C/7.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellC8",
         "id": "wellC8",
+        "name": "wellC8",
         "path": {
           "type": "zarr",
-          "path": "./wells/C/8.zarr"
+          "format": "relative",
+          "href": "./wells/C/8.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellC9",
         "id": "wellC9",
+        "name": "wellC9",
         "path": {
           "type": "zarr",
-          "path": "./wells/C/9.zarr"
+          "format": "relative",
+          "href": "./wells/C/9.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellC10",
         "id": "wellC10",
+        "name": "wellC10",
         "path": {
           "type": "zarr",
-          "path": "./wells/C/10.zarr"
+          "format": "relative",
+          "href": "./wells/C/10.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellC11",
         "id": "wellC11",
+        "name": "wellC11",
         "path": {
           "type": "zarr",
-          "path": "./wells/C/11.zarr"
+          "format": "relative",
+          "href": "./wells/C/11.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellC12",
         "id": "wellC12",
+        "name": "wellC12",
         "path": {
           "type": "zarr",
-          "path": "./wells/C/12.zarr"
+          "format": "relative",
+          "href": "./wells/C/12.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellC13",
         "id": "wellC13",
+        "name": "wellC13",
         "path": {
           "type": "zarr",
-          "path": "./wells/C/13.zarr"
+          "format": "relative",
+          "href": "./wells/C/13.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellC14",
         "id": "wellC14",
+        "name": "wellC14",
         "path": {
           "type": "zarr",
-          "path": "./wells/C/14.zarr"
+          "format": "relative",
+          "href": "./wells/C/14.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellC15",
         "id": "wellC15",
+        "name": "wellC15",
         "path": {
           "type": "zarr",
-          "path": "./wells/C/15.zarr"
+          "format": "relative",
+          "href": "./wells/C/15.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellC16",
         "id": "wellC16",
+        "name": "wellC16",
         "path": {
           "type": "zarr",
-          "path": "./wells/C/16.zarr"
+          "format": "relative",
+          "href": "./wells/C/16.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellC17",
         "id": "wellC17",
+        "name": "wellC17",
         "path": {
           "type": "zarr",
-          "path": "./wells/C/17.zarr"
+          "format": "relative",
+          "href": "./wells/C/17.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellC18",
         "id": "wellC18",
+        "name": "wellC18",
         "path": {
           "type": "zarr",
-          "path": "./wells/C/18.zarr"
+          "format": "relative",
+          "href": "./wells/C/18.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellC19",
         "id": "wellC19",
+        "name": "wellC19",
         "path": {
           "type": "zarr",
-          "path": "./wells/C/19.zarr"
+          "format": "relative",
+          "href": "./wells/C/19.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellC20",
         "id": "wellC20",
+        "name": "wellC20",
         "path": {
           "type": "zarr",
-          "path": "./wells/C/20.zarr"
+          "format": "relative",
+          "href": "./wells/C/20.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellC21",
         "id": "wellC21",
+        "name": "wellC21",
         "path": {
           "type": "zarr",
-          "path": "./wells/C/21.zarr"
+          "format": "relative",
+          "href": "./wells/C/21.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellC22",
         "id": "wellC22",
+        "name": "wellC22",
         "path": {
           "type": "zarr",
-          "path": "./wells/C/22.zarr"
+          "format": "relative",
+          "href": "./wells/C/22.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellC23",
         "id": "wellC23",
+        "name": "wellC23",
         "path": {
           "type": "zarr",
-          "path": "./wells/C/23.zarr"
+          "format": "relative",
+          "href": "./wells/C/23.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellC24",
         "id": "wellC24",
+        "name": "wellC24",
         "path": {
           "type": "zarr",
-          "path": "./wells/C/24.zarr"
+          "format": "relative",
+          "href": "./wells/C/24.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellD1",
         "id": "wellD1",
+        "name": "wellD1",
         "path": {
           "type": "zarr",
-          "path": "./wells/D/1.zarr"
+          "format": "relative",
+          "href": "./wells/D/1.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellD2",
         "id": "wellD2",
+        "name": "wellD2",
         "path": {
           "type": "zarr",
-          "path": "./wells/D/2.zarr"
+          "format": "relative",
+          "href": "./wells/D/2.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellD3",
         "id": "wellD3",
+        "name": "wellD3",
         "path": {
           "type": "zarr",
-          "path": "./wells/D/3.zarr"
+          "format": "relative",
+          "href": "./wells/D/3.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellD4",
         "id": "wellD4",
+        "name": "wellD4",
         "path": {
           "type": "zarr",
-          "path": "./wells/D/4.zarr"
+          "format": "relative",
+          "href": "./wells/D/4.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellD5",
         "id": "wellD5",
+        "name": "wellD5",
         "path": {
           "type": "zarr",
-          "path": "./wells/D/5.zarr"
+          "format": "relative",
+          "href": "./wells/D/5.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellD6",
         "id": "wellD6",
+        "name": "wellD6",
         "path": {
           "type": "zarr",
-          "path": "./wells/D/6.zarr"
+          "format": "relative",
+          "href": "./wells/D/6.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellD7",
         "id": "wellD7",
+        "name": "wellD7",
         "path": {
           "type": "zarr",
-          "path": "./wells/D/7.zarr"
+          "format": "relative",
+          "href": "./wells/D/7.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellD8",
         "id": "wellD8",
+        "name": "wellD8",
         "path": {
           "type": "zarr",
-          "path": "./wells/D/8.zarr"
+          "format": "relative",
+          "href": "./wells/D/8.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellD9",
         "id": "wellD9",
+        "name": "wellD9",
         "path": {
           "type": "zarr",
-          "path": "./wells/D/9.zarr"
+          "format": "relative",
+          "href": "./wells/D/9.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellD10",
         "id": "wellD10",
+        "name": "wellD10",
         "path": {
           "type": "zarr",
-          "path": "./wells/D/10.zarr"
+          "format": "relative",
+          "href": "./wells/D/10.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellD11",
         "id": "wellD11",
+        "name": "wellD11",
         "path": {
           "type": "zarr",
-          "path": "./wells/D/11.zarr"
+          "format": "relative",
+          "href": "./wells/D/11.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellD12",
         "id": "wellD12",
+        "name": "wellD12",
         "path": {
           "type": "zarr",
-          "path": "./wells/D/12.zarr"
+          "format": "relative",
+          "href": "./wells/D/12.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellD13",
         "id": "wellD13",
+        "name": "wellD13",
         "path": {
           "type": "zarr",
-          "path": "./wells/D/13.zarr"
+          "format": "relative",
+          "href": "./wells/D/13.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellD14",
         "id": "wellD14",
+        "name": "wellD14",
         "path": {
           "type": "zarr",
-          "path": "./wells/D/14.zarr"
+          "format": "relative",
+          "href": "./wells/D/14.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellD15",
         "id": "wellD15",
+        "name": "wellD15",
         "path": {
           "type": "zarr",
-          "path": "./wells/D/15.zarr"
+          "format": "relative",
+          "href": "./wells/D/15.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellD16",
         "id": "wellD16",
+        "name": "wellD16",
         "path": {
           "type": "zarr",
-          "path": "./wells/D/16.zarr"
+          "format": "relative",
+          "href": "./wells/D/16.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellD17",
         "id": "wellD17",
+        "name": "wellD17",
         "path": {
           "type": "zarr",
-          "path": "./wells/D/17.zarr"
+          "format": "relative",
+          "href": "./wells/D/17.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellD18",
         "id": "wellD18",
+        "name": "wellD18",
         "path": {
           "type": "zarr",
-          "path": "./wells/D/18.zarr"
+          "format": "relative",
+          "href": "./wells/D/18.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellD19",
         "id": "wellD19",
+        "name": "wellD19",
         "path": {
           "type": "zarr",
-          "path": "./wells/D/19.zarr"
+          "format": "relative",
+          "href": "./wells/D/19.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellD20",
         "id": "wellD20",
+        "name": "wellD20",
         "path": {
           "type": "zarr",
-          "path": "./wells/D/20.zarr"
+          "format": "relative",
+          "href": "./wells/D/20.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellD21",
         "id": "wellD21",
+        "name": "wellD21",
         "path": {
           "type": "zarr",
-          "path": "./wells/D/21.zarr"
+          "format": "relative",
+          "href": "./wells/D/21.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellD22",
         "id": "wellD22",
+        "name": "wellD22",
         "path": {
           "type": "zarr",
-          "path": "./wells/D/22.zarr"
+          "format": "relative",
+          "href": "./wells/D/22.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellD23",
         "id": "wellD23",
+        "name": "wellD23",
         "path": {
           "type": "zarr",
-          "path": "./wells/D/23.zarr"
+          "format": "relative",
+          "href": "./wells/D/23.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellD24",
         "id": "wellD24",
+        "name": "wellD24",
         "path": {
           "type": "zarr",
-          "path": "./wells/D/24.zarr"
+          "format": "relative",
+          "href": "./wells/D/24.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellE1",
         "id": "wellE1",
+        "name": "wellE1",
         "path": {
           "type": "zarr",
-          "path": "./wells/E/1.zarr"
+          "format": "relative",
+          "href": "./wells/E/1.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellE2",
         "id": "wellE2",
+        "name": "wellE2",
         "path": {
           "type": "zarr",
-          "path": "./wells/E/2.zarr"
+          "format": "relative",
+          "href": "./wells/E/2.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellE3",
         "id": "wellE3",
+        "name": "wellE3",
         "path": {
           "type": "zarr",
-          "path": "./wells/E/3.zarr"
+          "format": "relative",
+          "href": "./wells/E/3.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellE4",
         "id": "wellE4",
+        "name": "wellE4",
         "path": {
           "type": "zarr",
-          "path": "./wells/E/4.zarr"
+          "format": "relative",
+          "href": "./wells/E/4.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellE5",
         "id": "wellE5",
+        "name": "wellE5",
         "path": {
           "type": "zarr",
-          "path": "./wells/E/5.zarr"
+          "format": "relative",
+          "href": "./wells/E/5.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellE6",
         "id": "wellE6",
+        "name": "wellE6",
         "path": {
           "type": "zarr",
-          "path": "./wells/E/6.zarr"
+          "format": "relative",
+          "href": "./wells/E/6.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellE7",
         "id": "wellE7",
+        "name": "wellE7",
         "path": {
           "type": "zarr",
-          "path": "./wells/E/7.zarr"
+          "format": "relative",
+          "href": "./wells/E/7.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellE8",
         "id": "wellE8",
+        "name": "wellE8",
         "path": {
           "type": "zarr",
-          "path": "./wells/E/8.zarr"
+          "format": "relative",
+          "href": "./wells/E/8.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellE9",
         "id": "wellE9",
+        "name": "wellE9",
         "path": {
           "type": "zarr",
-          "path": "./wells/E/9.zarr"
+          "format": "relative",
+          "href": "./wells/E/9.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellE10",
         "id": "wellE10",
+        "name": "wellE10",
         "path": {
           "type": "zarr",
-          "path": "./wells/E/10.zarr"
+          "format": "relative",
+          "href": "./wells/E/10.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellE11",
         "id": "wellE11",
+        "name": "wellE11",
         "path": {
           "type": "zarr",
-          "path": "./wells/E/11.zarr"
+          "format": "relative",
+          "href": "./wells/E/11.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellE12",
         "id": "wellE12",
+        "name": "wellE12",
         "path": {
           "type": "zarr",
-          "path": "./wells/E/12.zarr"
+          "format": "relative",
+          "href": "./wells/E/12.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellE13",
         "id": "wellE13",
+        "name": "wellE13",
         "path": {
           "type": "zarr",
-          "path": "./wells/E/13.zarr"
+          "format": "relative",
+          "href": "./wells/E/13.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellE14",
         "id": "wellE14",
+        "name": "wellE14",
         "path": {
           "type": "zarr",
-          "path": "./wells/E/14.zarr"
+          "format": "relative",
+          "href": "./wells/E/14.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellE15",
         "id": "wellE15",
+        "name": "wellE15",
         "path": {
           "type": "zarr",
-          "path": "./wells/E/15.zarr"
+          "format": "relative",
+          "href": "./wells/E/15.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellE16",
         "id": "wellE16",
+        "name": "wellE16",
         "path": {
           "type": "zarr",
-          "path": "./wells/E/16.zarr"
+          "format": "relative",
+          "href": "./wells/E/16.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellE17",
         "id": "wellE17",
+        "name": "wellE17",
         "path": {
           "type": "zarr",
-          "path": "./wells/E/17.zarr"
+          "format": "relative",
+          "href": "./wells/E/17.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellE18",
         "id": "wellE18",
+        "name": "wellE18",
         "path": {
           "type": "zarr",
-          "path": "./wells/E/18.zarr"
+          "format": "relative",
+          "href": "./wells/E/18.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellE19",
         "id": "wellE19",
+        "name": "wellE19",
         "path": {
           "type": "zarr",
-          "path": "./wells/E/19.zarr"
+          "format": "relative",
+          "href": "./wells/E/19.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellE20",
         "id": "wellE20",
+        "name": "wellE20",
         "path": {
           "type": "zarr",
-          "path": "./wells/E/20.zarr"
+          "format": "relative",
+          "href": "./wells/E/20.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellE21",
         "id": "wellE21",
+        "name": "wellE21",
         "path": {
           "type": "zarr",
-          "path": "./wells/E/21.zarr"
+          "format": "relative",
+          "href": "./wells/E/21.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellE22",
         "id": "wellE22",
+        "name": "wellE22",
         "path": {
           "type": "zarr",
-          "path": "./wells/E/22.zarr"
+          "format": "relative",
+          "href": "./wells/E/22.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellE23",
         "id": "wellE23",
+        "name": "wellE23",
         "path": {
           "type": "zarr",
-          "path": "./wells/E/23.zarr"
+          "format": "relative",
+          "href": "./wells/E/23.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellE24",
         "id": "wellE24",
+        "name": "wellE24",
         "path": {
           "type": "zarr",
-          "path": "./wells/E/24.zarr"
+          "format": "relative",
+          "href": "./wells/E/24.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellF1",
         "id": "wellF1",
+        "name": "wellF1",
         "path": {
           "type": "zarr",
-          "path": "./wells/F/1.zarr"
+          "format": "relative",
+          "href": "./wells/F/1.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellF2",
         "id": "wellF2",
+        "name": "wellF2",
         "path": {
           "type": "zarr",
-          "path": "./wells/F/2.zarr"
+          "format": "relative",
+          "href": "./wells/F/2.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellF3",
         "id": "wellF3",
+        "name": "wellF3",
         "path": {
           "type": "zarr",
-          "path": "./wells/F/3.zarr"
+          "format": "relative",
+          "href": "./wells/F/3.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellF4",
         "id": "wellF4",
+        "name": "wellF4",
         "path": {
           "type": "zarr",
-          "path": "./wells/F/4.zarr"
+          "format": "relative",
+          "href": "./wells/F/4.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellF5",
         "id": "wellF5",
+        "name": "wellF5",
         "path": {
           "type": "zarr",
-          "path": "./wells/F/5.zarr"
+          "format": "relative",
+          "href": "./wells/F/5.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellF6",
         "id": "wellF6",
+        "name": "wellF6",
         "path": {
           "type": "zarr",
-          "path": "./wells/F/6.zarr"
+          "format": "relative",
+          "href": "./wells/F/6.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellF7",
         "id": "wellF7",
+        "name": "wellF7",
         "path": {
           "type": "zarr",
-          "path": "./wells/F/7.zarr"
+          "format": "relative",
+          "href": "./wells/F/7.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellF8",
         "id": "wellF8",
+        "name": "wellF8",
         "path": {
           "type": "zarr",
-          "path": "./wells/F/8.zarr"
+          "format": "relative",
+          "href": "./wells/F/8.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellF9",
         "id": "wellF9",
+        "name": "wellF9",
         "path": {
           "type": "zarr",
-          "path": "./wells/F/9.zarr"
+          "format": "relative",
+          "href": "./wells/F/9.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellF10",
         "id": "wellF10",
+        "name": "wellF10",
         "path": {
           "type": "zarr",
-          "path": "./wells/F/10.zarr"
+          "format": "relative",
+          "href": "./wells/F/10.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellF11",
         "id": "wellF11",
+        "name": "wellF11",
         "path": {
           "type": "zarr",
-          "path": "./wells/F/11.zarr"
+          "format": "relative",
+          "href": "./wells/F/11.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellF12",
         "id": "wellF12",
+        "name": "wellF12",
         "path": {
           "type": "zarr",
-          "path": "./wells/F/12.zarr"
+          "format": "relative",
+          "href": "./wells/F/12.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellF13",
         "id": "wellF13",
+        "name": "wellF13",
         "path": {
           "type": "zarr",
-          "path": "./wells/F/13.zarr"
+          "format": "relative",
+          "href": "./wells/F/13.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellF14",
         "id": "wellF14",
+        "name": "wellF14",
         "path": {
           "type": "zarr",
-          "path": "./wells/F/14.zarr"
+          "format": "relative",
+          "href": "./wells/F/14.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellF15",
         "id": "wellF15",
+        "name": "wellF15",
         "path": {
           "type": "zarr",
-          "path": "./wells/F/15.zarr"
+          "format": "relative",
+          "href": "./wells/F/15.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellF16",
         "id": "wellF16",
+        "name": "wellF16",
         "path": {
           "type": "zarr",
-          "path": "./wells/F/16.zarr"
+          "format": "relative",
+          "href": "./wells/F/16.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellF17",
         "id": "wellF17",
+        "name": "wellF17",
         "path": {
           "type": "zarr",
-          "path": "./wells/F/17.zarr"
+          "format": "relative",
+          "href": "./wells/F/17.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellF18",
         "id": "wellF18",
+        "name": "wellF18",
         "path": {
           "type": "zarr",
-          "path": "./wells/F/18.zarr"
+          "format": "relative",
+          "href": "./wells/F/18.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellF19",
         "id": "wellF19",
+        "name": "wellF19",
         "path": {
           "type": "zarr",
-          "path": "./wells/F/19.zarr"
+          "format": "relative",
+          "href": "./wells/F/19.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellF20",
         "id": "wellF20",
+        "name": "wellF20",
         "path": {
           "type": "zarr",
-          "path": "./wells/F/20.zarr"
+          "format": "relative",
+          "href": "./wells/F/20.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellF21",
         "id": "wellF21",
+        "name": "wellF21",
         "path": {
           "type": "zarr",
-          "path": "./wells/F/21.zarr"
+          "format": "relative",
+          "href": "./wells/F/21.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellF22",
         "id": "wellF22",
+        "name": "wellF22",
         "path": {
           "type": "zarr",
-          "path": "./wells/F/22.zarr"
+          "format": "relative",
+          "href": "./wells/F/22.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellF23",
         "id": "wellF23",
+        "name": "wellF23",
         "path": {
           "type": "zarr",
-          "path": "./wells/F/23.zarr"
+          "format": "relative",
+          "href": "./wells/F/23.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellF24",
         "id": "wellF24",
+        "name": "wellF24",
         "path": {
           "type": "zarr",
-          "path": "./wells/F/24.zarr"
+          "format": "relative",
+          "href": "./wells/F/24.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellG1",
         "id": "wellG1",
+        "name": "wellG1",
         "path": {
           "type": "zarr",
-          "path": "./wells/G/1.zarr"
+          "format": "relative",
+          "href": "./wells/G/1.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellG2",
         "id": "wellG2",
+        "name": "wellG2",
         "path": {
           "type": "zarr",
-          "path": "./wells/G/2.zarr"
+          "format": "relative",
+          "href": "./wells/G/2.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellG3",
         "id": "wellG3",
+        "name": "wellG3",
         "path": {
           "type": "zarr",
-          "path": "./wells/G/3.zarr"
+          "format": "relative",
+          "href": "./wells/G/3.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellG4",
         "id": "wellG4",
+        "name": "wellG4",
         "path": {
           "type": "zarr",
-          "path": "./wells/G/4.zarr"
+          "format": "relative",
+          "href": "./wells/G/4.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellG5",
         "id": "wellG5",
+        "name": "wellG5",
         "path": {
           "type": "zarr",
-          "path": "./wells/G/5.zarr"
+          "format": "relative",
+          "href": "./wells/G/5.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellG6",
         "id": "wellG6",
+        "name": "wellG6",
         "path": {
           "type": "zarr",
-          "path": "./wells/G/6.zarr"
+          "format": "relative",
+          "href": "./wells/G/6.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellG7",
         "id": "wellG7",
+        "name": "wellG7",
         "path": {
           "type": "zarr",
-          "path": "./wells/G/7.zarr"
+          "format": "relative",
+          "href": "./wells/G/7.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellG8",
         "id": "wellG8",
+        "name": "wellG8",
         "path": {
           "type": "zarr",
-          "path": "./wells/G/8.zarr"
+          "format": "relative",
+          "href": "./wells/G/8.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellG9",
         "id": "wellG9",
+        "name": "wellG9",
         "path": {
           "type": "zarr",
-          "path": "./wells/G/9.zarr"
+          "format": "relative",
+          "href": "./wells/G/9.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellG10",
         "id": "wellG10",
+        "name": "wellG10",
         "path": {
           "type": "zarr",
-          "path": "./wells/G/10.zarr"
+          "format": "relative",
+          "href": "./wells/G/10.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellG11",
         "id": "wellG11",
+        "name": "wellG11",
         "path": {
           "type": "zarr",
-          "path": "./wells/G/11.zarr"
+          "format": "relative",
+          "href": "./wells/G/11.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellG12",
         "id": "wellG12",
+        "name": "wellG12",
         "path": {
           "type": "zarr",
-          "path": "./wells/G/12.zarr"
+          "format": "relative",
+          "href": "./wells/G/12.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellG13",
         "id": "wellG13",
+        "name": "wellG13",
         "path": {
           "type": "zarr",
-          "path": "./wells/G/13.zarr"
+          "format": "relative",
+          "href": "./wells/G/13.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellG14",
         "id": "wellG14",
+        "name": "wellG14",
         "path": {
           "type": "zarr",
-          "path": "./wells/G/14.zarr"
+          "format": "relative",
+          "href": "./wells/G/14.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellG15",
         "id": "wellG15",
+        "name": "wellG15",
         "path": {
           "type": "zarr",
-          "path": "./wells/G/15.zarr"
+          "format": "relative",
+          "href": "./wells/G/15.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellG16",
         "id": "wellG16",
+        "name": "wellG16",
         "path": {
           "type": "zarr",
-          "path": "./wells/G/16.zarr"
+          "format": "relative",
+          "href": "./wells/G/16.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellG17",
         "id": "wellG17",
+        "name": "wellG17",
         "path": {
           "type": "zarr",
-          "path": "./wells/G/17.zarr"
+          "format": "relative",
+          "href": "./wells/G/17.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellG18",
         "id": "wellG18",
+        "name": "wellG18",
         "path": {
           "type": "zarr",
-          "path": "./wells/G/18.zarr"
+          "format": "relative",
+          "href": "./wells/G/18.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellG19",
         "id": "wellG19",
+        "name": "wellG19",
         "path": {
           "type": "zarr",
-          "path": "./wells/G/19.zarr"
+          "format": "relative",
+          "href": "./wells/G/19.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellG20",
         "id": "wellG20",
+        "name": "wellG20",
         "path": {
           "type": "zarr",
-          "path": "./wells/G/20.zarr"
+          "format": "relative",
+          "href": "./wells/G/20.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellG21",
         "id": "wellG21",
+        "name": "wellG21",
         "path": {
           "type": "zarr",
-          "path": "./wells/G/21.zarr"
+          "format": "relative",
+          "href": "./wells/G/21.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellG22",
         "id": "wellG22",
+        "name": "wellG22",
         "path": {
           "type": "zarr",
-          "path": "./wells/G/22.zarr"
+          "format": "relative",
+          "href": "./wells/G/22.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellG23",
         "id": "wellG23",
+        "name": "wellG23",
         "path": {
           "type": "zarr",
-          "path": "./wells/G/23.zarr"
+          "format": "relative",
+          "href": "./wells/G/23.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellG24",
         "id": "wellG24",
+        "name": "wellG24",
         "path": {
           "type": "zarr",
-          "path": "./wells/G/24.zarr"
+          "format": "relative",
+          "href": "./wells/G/24.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellH1",
         "id": "wellH1",
+        "name": "wellH1",
         "path": {
           "type": "zarr",
-          "path": "./wells/H/1.zarr"
+          "format": "relative",
+          "href": "./wells/H/1.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellH2",
         "id": "wellH2",
+        "name": "wellH2",
         "path": {
           "type": "zarr",
-          "path": "./wells/H/2.zarr"
+          "format": "relative",
+          "href": "./wells/H/2.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellH3",
         "id": "wellH3",
+        "name": "wellH3",
         "path": {
           "type": "zarr",
-          "path": "./wells/H/3.zarr"
+          "format": "relative",
+          "href": "./wells/H/3.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellH4",
         "id": "wellH4",
+        "name": "wellH4",
         "path": {
           "type": "zarr",
-          "path": "./wells/H/4.zarr"
+          "format": "relative",
+          "href": "./wells/H/4.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellH5",
         "id": "wellH5",
+        "name": "wellH5",
         "path": {
           "type": "zarr",
-          "path": "./wells/H/5.zarr"
+          "format": "relative",
+          "href": "./wells/H/5.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellH6",
         "id": "wellH6",
+        "name": "wellH6",
         "path": {
           "type": "zarr",
-          "path": "./wells/H/6.zarr"
+          "format": "relative",
+          "href": "./wells/H/6.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellH7",
         "id": "wellH7",
+        "name": "wellH7",
         "path": {
           "type": "zarr",
-          "path": "./wells/H/7.zarr"
+          "format": "relative",
+          "href": "./wells/H/7.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellH8",
         "id": "wellH8",
+        "name": "wellH8",
         "path": {
           "type": "zarr",
-          "path": "./wells/H/8.zarr"
+          "format": "relative",
+          "href": "./wells/H/8.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellH9",
         "id": "wellH9",
+        "name": "wellH9",
         "path": {
           "type": "zarr",
-          "path": "./wells/H/9.zarr"
+          "format": "relative",
+          "href": "./wells/H/9.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellH10",
         "id": "wellH10",
+        "name": "wellH10",
         "path": {
           "type": "zarr",
-          "path": "./wells/H/10.zarr"
+          "format": "relative",
+          "href": "./wells/H/10.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellH11",
         "id": "wellH11",
+        "name": "wellH11",
         "path": {
           "type": "zarr",
-          "path": "./wells/H/11.zarr"
+          "format": "relative",
+          "href": "./wells/H/11.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellH12",
         "id": "wellH12",
+        "name": "wellH12",
         "path": {
           "type": "zarr",
-          "path": "./wells/H/12.zarr"
+          "format": "relative",
+          "href": "./wells/H/12.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellH13",
         "id": "wellH13",
+        "name": "wellH13",
         "path": {
           "type": "zarr",
-          "path": "./wells/H/13.zarr"
+          "format": "relative",
+          "href": "./wells/H/13.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellH14",
         "id": "wellH14",
+        "name": "wellH14",
         "path": {
           "type": "zarr",
-          "path": "./wells/H/14.zarr"
+          "format": "relative",
+          "href": "./wells/H/14.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellH15",
         "id": "wellH15",
+        "name": "wellH15",
         "path": {
           "type": "zarr",
-          "path": "./wells/H/15.zarr"
+          "format": "relative",
+          "href": "./wells/H/15.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellH16",
         "id": "wellH16",
+        "name": "wellH16",
         "path": {
           "type": "zarr",
-          "path": "./wells/H/16.zarr"
+          "format": "relative",
+          "href": "./wells/H/16.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellH17",
         "id": "wellH17",
+        "name": "wellH17",
         "path": {
           "type": "zarr",
-          "path": "./wells/H/17.zarr"
+          "format": "relative",
+          "href": "./wells/H/17.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellH18",
         "id": "wellH18",
+        "name": "wellH18",
         "path": {
           "type": "zarr",
-          "path": "./wells/H/18.zarr"
+          "format": "relative",
+          "href": "./wells/H/18.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellH19",
         "id": "wellH19",
+        "name": "wellH19",
         "path": {
           "type": "zarr",
-          "path": "./wells/H/19.zarr"
+          "format": "relative",
+          "href": "./wells/H/19.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellH20",
         "id": "wellH20",
+        "name": "wellH20",
         "path": {
           "type": "zarr",
-          "path": "./wells/H/20.zarr"
+          "format": "relative",
+          "href": "./wells/H/20.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellH21",
         "id": "wellH21",
+        "name": "wellH21",
         "path": {
           "type": "zarr",
-          "path": "./wells/H/21.zarr"
+          "format": "relative",
+          "href": "./wells/H/21.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellH22",
         "id": "wellH22",
+        "name": "wellH22",
         "path": {
           "type": "zarr",
-          "path": "./wells/H/22.zarr"
+          "format": "relative",
+          "href": "./wells/H/22.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellH23",
         "id": "wellH23",
+        "name": "wellH23",
         "path": {
           "type": "zarr",
-          "path": "./wells/H/23.zarr"
+          "format": "relative",
+          "href": "./wells/H/23.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellH24",
         "id": "wellH24",
+        "name": "wellH24",
         "path": {
           "type": "zarr",
-          "path": "./wells/H/24.zarr"
+          "format": "relative",
+          "href": "./wells/H/24.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellI1",
         "id": "wellI1",
+        "name": "wellI1",
         "path": {
           "type": "zarr",
-          "path": "./wells/I/1.zarr"
+          "format": "relative",
+          "href": "./wells/I/1.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellI2",
         "id": "wellI2",
+        "name": "wellI2",
         "path": {
           "type": "zarr",
-          "path": "./wells/I/2.zarr"
+          "format": "relative",
+          "href": "./wells/I/2.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellI3",
         "id": "wellI3",
+        "name": "wellI3",
         "path": {
           "type": "zarr",
-          "path": "./wells/I/3.zarr"
+          "format": "relative",
+          "href": "./wells/I/3.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellI4",
         "id": "wellI4",
+        "name": "wellI4",
         "path": {
           "type": "zarr",
-          "path": "./wells/I/4.zarr"
+          "format": "relative",
+          "href": "./wells/I/4.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellI5",
         "id": "wellI5",
+        "name": "wellI5",
         "path": {
           "type": "zarr",
-          "path": "./wells/I/5.zarr"
+          "format": "relative",
+          "href": "./wells/I/5.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellI6",
         "id": "wellI6",
+        "name": "wellI6",
         "path": {
           "type": "zarr",
-          "path": "./wells/I/6.zarr"
+          "format": "relative",
+          "href": "./wells/I/6.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellI7",
         "id": "wellI7",
+        "name": "wellI7",
         "path": {
           "type": "zarr",
-          "path": "./wells/I/7.zarr"
+          "format": "relative",
+          "href": "./wells/I/7.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellI8",
         "id": "wellI8",
+        "name": "wellI8",
         "path": {
           "type": "zarr",
-          "path": "./wells/I/8.zarr"
+          "format": "relative",
+          "href": "./wells/I/8.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellI9",
         "id": "wellI9",
+        "name": "wellI9",
         "path": {
           "type": "zarr",
-          "path": "./wells/I/9.zarr"
+          "format": "relative",
+          "href": "./wells/I/9.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellI10",
         "id": "wellI10",
+        "name": "wellI10",
         "path": {
           "type": "zarr",
-          "path": "./wells/I/10.zarr"
+          "format": "relative",
+          "href": "./wells/I/10.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellI11",
         "id": "wellI11",
+        "name": "wellI11",
         "path": {
           "type": "zarr",
-          "path": "./wells/I/11.zarr"
+          "format": "relative",
+          "href": "./wells/I/11.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellI12",
         "id": "wellI12",
+        "name": "wellI12",
         "path": {
           "type": "zarr",
-          "path": "./wells/I/12.zarr"
+          "format": "relative",
+          "href": "./wells/I/12.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellI13",
         "id": "wellI13",
+        "name": "wellI13",
         "path": {
           "type": "zarr",
-          "path": "./wells/I/13.zarr"
+          "format": "relative",
+          "href": "./wells/I/13.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellI14",
         "id": "wellI14",
+        "name": "wellI14",
         "path": {
           "type": "zarr",
-          "path": "./wells/I/14.zarr"
+          "format": "relative",
+          "href": "./wells/I/14.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellI15",
         "id": "wellI15",
+        "name": "wellI15",
         "path": {
           "type": "zarr",
-          "path": "./wells/I/15.zarr"
+          "format": "relative",
+          "href": "./wells/I/15.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellI16",
         "id": "wellI16",
+        "name": "wellI16",
         "path": {
           "type": "zarr",
-          "path": "./wells/I/16.zarr"
+          "format": "relative",
+          "href": "./wells/I/16.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellI17",
         "id": "wellI17",
+        "name": "wellI17",
         "path": {
           "type": "zarr",
-          "path": "./wells/I/17.zarr"
+          "format": "relative",
+          "href": "./wells/I/17.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellI18",
         "id": "wellI18",
+        "name": "wellI18",
         "path": {
           "type": "zarr",
-          "path": "./wells/I/18.zarr"
+          "format": "relative",
+          "href": "./wells/I/18.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellI19",
         "id": "wellI19",
+        "name": "wellI19",
         "path": {
           "type": "zarr",
-          "path": "./wells/I/19.zarr"
+          "format": "relative",
+          "href": "./wells/I/19.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellI20",
         "id": "wellI20",
+        "name": "wellI20",
         "path": {
           "type": "zarr",
-          "path": "./wells/I/20.zarr"
+          "format": "relative",
+          "href": "./wells/I/20.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellI21",
         "id": "wellI21",
+        "name": "wellI21",
         "path": {
           "type": "zarr",
-          "path": "./wells/I/21.zarr"
+          "format": "relative",
+          "href": "./wells/I/21.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellI22",
         "id": "wellI22",
+        "name": "wellI22",
         "path": {
           "type": "zarr",
-          "path": "./wells/I/22.zarr"
+          "format": "relative",
+          "href": "./wells/I/22.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellI23",
         "id": "wellI23",
+        "name": "wellI23",
         "path": {
           "type": "zarr",
-          "path": "./wells/I/23.zarr"
+          "format": "relative",
+          "href": "./wells/I/23.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellI24",
         "id": "wellI24",
+        "name": "wellI24",
         "path": {
           "type": "zarr",
-          "path": "./wells/I/24.zarr"
+          "format": "relative",
+          "href": "./wells/I/24.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellJ1",
         "id": "wellJ1",
+        "name": "wellJ1",
         "path": {
           "type": "zarr",
-          "path": "./wells/J/1.zarr"
+          "format": "relative",
+          "href": "./wells/J/1.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellJ2",
         "id": "wellJ2",
+        "name": "wellJ2",
         "path": {
           "type": "zarr",
-          "path": "./wells/J/2.zarr"
+          "format": "relative",
+          "href": "./wells/J/2.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellJ3",
         "id": "wellJ3",
+        "name": "wellJ3",
         "path": {
           "type": "zarr",
-          "path": "./wells/J/3.zarr"
+          "format": "relative",
+          "href": "./wells/J/3.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellJ4",
         "id": "wellJ4",
+        "name": "wellJ4",
         "path": {
           "type": "zarr",
-          "path": "./wells/J/4.zarr"
+          "format": "relative",
+          "href": "./wells/J/4.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellJ5",
         "id": "wellJ5",
+        "name": "wellJ5",
         "path": {
           "type": "zarr",
-          "path": "./wells/J/5.zarr"
+          "format": "relative",
+          "href": "./wells/J/5.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellJ6",
         "id": "wellJ6",
+        "name": "wellJ6",
         "path": {
           "type": "zarr",
-          "path": "./wells/J/6.zarr"
+          "format": "relative",
+          "href": "./wells/J/6.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellJ7",
         "id": "wellJ7",
+        "name": "wellJ7",
         "path": {
           "type": "zarr",
-          "path": "./wells/J/7.zarr"
+          "format": "relative",
+          "href": "./wells/J/7.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellJ8",
         "id": "wellJ8",
+        "name": "wellJ8",
         "path": {
           "type": "zarr",
-          "path": "./wells/J/8.zarr"
+          "format": "relative",
+          "href": "./wells/J/8.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellJ9",
         "id": "wellJ9",
+        "name": "wellJ9",
         "path": {
           "type": "zarr",
-          "path": "./wells/J/9.zarr"
+          "format": "relative",
+          "href": "./wells/J/9.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellJ10",
         "id": "wellJ10",
+        "name": "wellJ10",
         "path": {
           "type": "zarr",
-          "path": "./wells/J/10.zarr"
+          "format": "relative",
+          "href": "./wells/J/10.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellJ11",
         "id": "wellJ11",
+        "name": "wellJ11",
         "path": {
           "type": "zarr",
-          "path": "./wells/J/11.zarr"
+          "format": "relative",
+          "href": "./wells/J/11.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellJ12",
         "id": "wellJ12",
+        "name": "wellJ12",
         "path": {
           "type": "zarr",
-          "path": "./wells/J/12.zarr"
+          "format": "relative",
+          "href": "./wells/J/12.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellJ13",
         "id": "wellJ13",
+        "name": "wellJ13",
         "path": {
           "type": "zarr",
-          "path": "./wells/J/13.zarr"
+          "format": "relative",
+          "href": "./wells/J/13.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellJ14",
         "id": "wellJ14",
+        "name": "wellJ14",
         "path": {
           "type": "zarr",
-          "path": "./wells/J/14.zarr"
+          "format": "relative",
+          "href": "./wells/J/14.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellJ15",
         "id": "wellJ15",
+        "name": "wellJ15",
         "path": {
           "type": "zarr",
-          "path": "./wells/J/15.zarr"
+          "format": "relative",
+          "href": "./wells/J/15.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellJ16",
         "id": "wellJ16",
+        "name": "wellJ16",
         "path": {
           "type": "zarr",
-          "path": "./wells/J/16.zarr"
+          "format": "relative",
+          "href": "./wells/J/16.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellJ17",
         "id": "wellJ17",
+        "name": "wellJ17",
         "path": {
           "type": "zarr",
-          "path": "./wells/J/17.zarr"
+          "format": "relative",
+          "href": "./wells/J/17.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellJ18",
         "id": "wellJ18",
+        "name": "wellJ18",
         "path": {
           "type": "zarr",
-          "path": "./wells/J/18.zarr"
+          "format": "relative",
+          "href": "./wells/J/18.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellJ19",
         "id": "wellJ19",
+        "name": "wellJ19",
         "path": {
           "type": "zarr",
-          "path": "./wells/J/19.zarr"
+          "format": "relative",
+          "href": "./wells/J/19.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellJ20",
         "id": "wellJ20",
+        "name": "wellJ20",
         "path": {
           "type": "zarr",
-          "path": "./wells/J/20.zarr"
+          "format": "relative",
+          "href": "./wells/J/20.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellJ21",
         "id": "wellJ21",
+        "name": "wellJ21",
         "path": {
           "type": "zarr",
-          "path": "./wells/J/21.zarr"
+          "format": "relative",
+          "href": "./wells/J/21.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellJ22",
         "id": "wellJ22",
+        "name": "wellJ22",
         "path": {
           "type": "zarr",
-          "path": "./wells/J/22.zarr"
+          "format": "relative",
+          "href": "./wells/J/22.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellJ23",
         "id": "wellJ23",
+        "name": "wellJ23",
         "path": {
           "type": "zarr",
-          "path": "./wells/J/23.zarr"
+          "format": "relative",
+          "href": "./wells/J/23.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellJ24",
         "id": "wellJ24",
+        "name": "wellJ24",
         "path": {
           "type": "zarr",
-          "path": "./wells/J/24.zarr"
+          "format": "relative",
+          "href": "./wells/J/24.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellK1",
         "id": "wellK1",
+        "name": "wellK1",
         "path": {
           "type": "zarr",
-          "path": "./wells/K/1.zarr"
+          "format": "relative",
+          "href": "./wells/K/1.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellK2",
         "id": "wellK2",
+        "name": "wellK2",
         "path": {
           "type": "zarr",
-          "path": "./wells/K/2.zarr"
+          "format": "relative",
+          "href": "./wells/K/2.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellK3",
         "id": "wellK3",
+        "name": "wellK3",
         "path": {
           "type": "zarr",
-          "path": "./wells/K/3.zarr"
+          "format": "relative",
+          "href": "./wells/K/3.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellK4",
         "id": "wellK4",
+        "name": "wellK4",
         "path": {
           "type": "zarr",
-          "path": "./wells/K/4.zarr"
+          "format": "relative",
+          "href": "./wells/K/4.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellK5",
         "id": "wellK5",
+        "name": "wellK5",
         "path": {
           "type": "zarr",
-          "path": "./wells/K/5.zarr"
+          "format": "relative",
+          "href": "./wells/K/5.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellK6",
         "id": "wellK6",
+        "name": "wellK6",
         "path": {
           "type": "zarr",
-          "path": "./wells/K/6.zarr"
+          "format": "relative",
+          "href": "./wells/K/6.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellK7",
         "id": "wellK7",
+        "name": "wellK7",
         "path": {
           "type": "zarr",
-          "path": "./wells/K/7.zarr"
+          "format": "relative",
+          "href": "./wells/K/7.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellK8",
         "id": "wellK8",
+        "name": "wellK8",
         "path": {
           "type": "zarr",
-          "path": "./wells/K/8.zarr"
+          "format": "relative",
+          "href": "./wells/K/8.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellK9",
         "id": "wellK9",
+        "name": "wellK9",
         "path": {
           "type": "zarr",
-          "path": "./wells/K/9.zarr"
+          "format": "relative",
+          "href": "./wells/K/9.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellK10",
         "id": "wellK10",
+        "name": "wellK10",
         "path": {
           "type": "zarr",
-          "path": "./wells/K/10.zarr"
+          "format": "relative",
+          "href": "./wells/K/10.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellK11",
         "id": "wellK11",
+        "name": "wellK11",
         "path": {
           "type": "zarr",
-          "path": "./wells/K/11.zarr"
+          "format": "relative",
+          "href": "./wells/K/11.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellK12",
         "id": "wellK12",
+        "name": "wellK12",
         "path": {
           "type": "zarr",
-          "path": "./wells/K/12.zarr"
+          "format": "relative",
+          "href": "./wells/K/12.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellK13",
         "id": "wellK13",
+        "name": "wellK13",
         "path": {
           "type": "zarr",
-          "path": "./wells/K/13.zarr"
+          "format": "relative",
+          "href": "./wells/K/13.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellK14",
         "id": "wellK14",
+        "name": "wellK14",
         "path": {
           "type": "zarr",
-          "path": "./wells/K/14.zarr"
+          "format": "relative",
+          "href": "./wells/K/14.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellK15",
         "id": "wellK15",
+        "name": "wellK15",
         "path": {
           "type": "zarr",
-          "path": "./wells/K/15.zarr"
+          "format": "relative",
+          "href": "./wells/K/15.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellK16",
         "id": "wellK16",
+        "name": "wellK16",
         "path": {
           "type": "zarr",
-          "path": "./wells/K/16.zarr"
+          "format": "relative",
+          "href": "./wells/K/16.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellK17",
         "id": "wellK17",
+        "name": "wellK17",
         "path": {
           "type": "zarr",
-          "path": "./wells/K/17.zarr"
+          "format": "relative",
+          "href": "./wells/K/17.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellK18",
         "id": "wellK18",
+        "name": "wellK18",
         "path": {
           "type": "zarr",
-          "path": "./wells/K/18.zarr"
+          "format": "relative",
+          "href": "./wells/K/18.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellK19",
         "id": "wellK19",
+        "name": "wellK19",
         "path": {
           "type": "zarr",
-          "path": "./wells/K/19.zarr"
+          "format": "relative",
+          "href": "./wells/K/19.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellK20",
         "id": "wellK20",
+        "name": "wellK20",
         "path": {
           "type": "zarr",
-          "path": "./wells/K/20.zarr"
+          "format": "relative",
+          "href": "./wells/K/20.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellK21",
         "id": "wellK21",
+        "name": "wellK21",
         "path": {
           "type": "zarr",
-          "path": "./wells/K/21.zarr"
+          "format": "relative",
+          "href": "./wells/K/21.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellK22",
         "id": "wellK22",
+        "name": "wellK22",
         "path": {
           "type": "zarr",
-          "path": "./wells/K/22.zarr"
+          "format": "relative",
+          "href": "./wells/K/22.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellK23",
         "id": "wellK23",
+        "name": "wellK23",
         "path": {
           "type": "zarr",
-          "path": "./wells/K/23.zarr"
+          "format": "relative",
+          "href": "./wells/K/23.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellK24",
         "id": "wellK24",
+        "name": "wellK24",
         "path": {
           "type": "zarr",
-          "path": "./wells/K/24.zarr"
+          "format": "relative",
+          "href": "./wells/K/24.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellL1",
         "id": "wellL1",
+        "name": "wellL1",
         "path": {
           "type": "zarr",
-          "path": "./wells/L/1.zarr"
+          "format": "relative",
+          "href": "./wells/L/1.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellL2",
         "id": "wellL2",
+        "name": "wellL2",
         "path": {
           "type": "zarr",
-          "path": "./wells/L/2.zarr"
+          "format": "relative",
+          "href": "./wells/L/2.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellL3",
         "id": "wellL3",
+        "name": "wellL3",
         "path": {
           "type": "zarr",
-          "path": "./wells/L/3.zarr"
+          "format": "relative",
+          "href": "./wells/L/3.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellL4",
         "id": "wellL4",
+        "name": "wellL4",
         "path": {
           "type": "zarr",
-          "path": "./wells/L/4.zarr"
+          "format": "relative",
+          "href": "./wells/L/4.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellL5",
         "id": "wellL5",
+        "name": "wellL5",
         "path": {
           "type": "zarr",
-          "path": "./wells/L/5.zarr"
+          "format": "relative",
+          "href": "./wells/L/5.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellL6",
         "id": "wellL6",
+        "name": "wellL6",
         "path": {
           "type": "zarr",
-          "path": "./wells/L/6.zarr"
+          "format": "relative",
+          "href": "./wells/L/6.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellL7",
         "id": "wellL7",
+        "name": "wellL7",
         "path": {
           "type": "zarr",
-          "path": "./wells/L/7.zarr"
+          "format": "relative",
+          "href": "./wells/L/7.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellL8",
         "id": "wellL8",
+        "name": "wellL8",
         "path": {
           "type": "zarr",
-          "path": "./wells/L/8.zarr"
+          "format": "relative",
+          "href": "./wells/L/8.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellL9",
         "id": "wellL9",
+        "name": "wellL9",
         "path": {
           "type": "zarr",
-          "path": "./wells/L/9.zarr"
+          "format": "relative",
+          "href": "./wells/L/9.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellL10",
         "id": "wellL10",
+        "name": "wellL10",
         "path": {
           "type": "zarr",
-          "path": "./wells/L/10.zarr"
+          "format": "relative",
+          "href": "./wells/L/10.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellL11",
         "id": "wellL11",
+        "name": "wellL11",
         "path": {
           "type": "zarr",
-          "path": "./wells/L/11.zarr"
+          "format": "relative",
+          "href": "./wells/L/11.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellL12",
         "id": "wellL12",
+        "name": "wellL12",
         "path": {
           "type": "zarr",
-          "path": "./wells/L/12.zarr"
+          "format": "relative",
+          "href": "./wells/L/12.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellL13",
         "id": "wellL13",
+        "name": "wellL13",
         "path": {
           "type": "zarr",
-          "path": "./wells/L/13.zarr"
+          "format": "relative",
+          "href": "./wells/L/13.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellL14",
         "id": "wellL14",
+        "name": "wellL14",
         "path": {
           "type": "zarr",
-          "path": "./wells/L/14.zarr"
+          "format": "relative",
+          "href": "./wells/L/14.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellL15",
         "id": "wellL15",
+        "name": "wellL15",
         "path": {
           "type": "zarr",
-          "path": "./wells/L/15.zarr"
+          "format": "relative",
+          "href": "./wells/L/15.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellL16",
         "id": "wellL16",
+        "name": "wellL16",
         "path": {
           "type": "zarr",
-          "path": "./wells/L/16.zarr"
+          "format": "relative",
+          "href": "./wells/L/16.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellL17",
         "id": "wellL17",
+        "name": "wellL17",
         "path": {
           "type": "zarr",
-          "path": "./wells/L/17.zarr"
+          "format": "relative",
+          "href": "./wells/L/17.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellL18",
         "id": "wellL18",
+        "name": "wellL18",
         "path": {
           "type": "zarr",
-          "path": "./wells/L/18.zarr"
+          "format": "relative",
+          "href": "./wells/L/18.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellL19",
         "id": "wellL19",
+        "name": "wellL19",
         "path": {
           "type": "zarr",
-          "path": "./wells/L/19.zarr"
+          "format": "relative",
+          "href": "./wells/L/19.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellL20",
         "id": "wellL20",
+        "name": "wellL20",
         "path": {
           "type": "zarr",
-          "path": "./wells/L/20.zarr"
+          "format": "relative",
+          "href": "./wells/L/20.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellL21",
         "id": "wellL21",
+        "name": "wellL21",
         "path": {
           "type": "zarr",
-          "path": "./wells/L/21.zarr"
+          "format": "relative",
+          "href": "./wells/L/21.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellL22",
         "id": "wellL22",
+        "name": "wellL22",
         "path": {
           "type": "zarr",
-          "path": "./wells/L/22.zarr"
+          "format": "relative",
+          "href": "./wells/L/22.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellL23",
         "id": "wellL23",
+        "name": "wellL23",
         "path": {
           "type": "zarr",
-          "path": "./wells/L/23.zarr"
+          "format": "relative",
+          "href": "./wells/L/23.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellL24",
         "id": "wellL24",
+        "name": "wellL24",
         "path": {
           "type": "zarr",
-          "path": "./wells/L/24.zarr"
+          "format": "relative",
+          "href": "./wells/L/24.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellM1",
         "id": "wellM1",
+        "name": "wellM1",
         "path": {
           "type": "zarr",
-          "path": "./wells/M/1.zarr"
+          "format": "relative",
+          "href": "./wells/M/1.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellM2",
         "id": "wellM2",
+        "name": "wellM2",
         "path": {
           "type": "zarr",
-          "path": "./wells/M/2.zarr"
+          "format": "relative",
+          "href": "./wells/M/2.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellM3",
         "id": "wellM3",
+        "name": "wellM3",
         "path": {
           "type": "zarr",
-          "path": "./wells/M/3.zarr"
+          "format": "relative",
+          "href": "./wells/M/3.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellM4",
         "id": "wellM4",
+        "name": "wellM4",
         "path": {
           "type": "zarr",
-          "path": "./wells/M/4.zarr"
+          "format": "relative",
+          "href": "./wells/M/4.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellM5",
         "id": "wellM5",
+        "name": "wellM5",
         "path": {
           "type": "zarr",
-          "path": "./wells/M/5.zarr"
+          "format": "relative",
+          "href": "./wells/M/5.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellM6",
         "id": "wellM6",
+        "name": "wellM6",
         "path": {
           "type": "zarr",
-          "path": "./wells/M/6.zarr"
+          "format": "relative",
+          "href": "./wells/M/6.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellM7",
         "id": "wellM7",
+        "name": "wellM7",
         "path": {
           "type": "zarr",
-          "path": "./wells/M/7.zarr"
+          "format": "relative",
+          "href": "./wells/M/7.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellM8",
         "id": "wellM8",
+        "name": "wellM8",
         "path": {
           "type": "zarr",
-          "path": "./wells/M/8.zarr"
+          "format": "relative",
+          "href": "./wells/M/8.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellM9",
         "id": "wellM9",
+        "name": "wellM9",
         "path": {
           "type": "zarr",
-          "path": "./wells/M/9.zarr"
+          "format": "relative",
+          "href": "./wells/M/9.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellM10",
         "id": "wellM10",
+        "name": "wellM10",
         "path": {
           "type": "zarr",
-          "path": "./wells/M/10.zarr"
+          "format": "relative",
+          "href": "./wells/M/10.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellM11",
         "id": "wellM11",
+        "name": "wellM11",
         "path": {
           "type": "zarr",
-          "path": "./wells/M/11.zarr"
+          "format": "relative",
+          "href": "./wells/M/11.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellM12",
         "id": "wellM12",
+        "name": "wellM12",
         "path": {
           "type": "zarr",
-          "path": "./wells/M/12.zarr"
+          "format": "relative",
+          "href": "./wells/M/12.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellM13",
         "id": "wellM13",
+        "name": "wellM13",
         "path": {
           "type": "zarr",
-          "path": "./wells/M/13.zarr"
+          "format": "relative",
+          "href": "./wells/M/13.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellM14",
         "id": "wellM14",
+        "name": "wellM14",
         "path": {
           "type": "zarr",
-          "path": "./wells/M/14.zarr"
+          "format": "relative",
+          "href": "./wells/M/14.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellM15",
         "id": "wellM15",
+        "name": "wellM15",
         "path": {
           "type": "zarr",
-          "path": "./wells/M/15.zarr"
+          "format": "relative",
+          "href": "./wells/M/15.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellM16",
         "id": "wellM16",
+        "name": "wellM16",
         "path": {
           "type": "zarr",
-          "path": "./wells/M/16.zarr"
+          "format": "relative",
+          "href": "./wells/M/16.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellM17",
         "id": "wellM17",
+        "name": "wellM17",
         "path": {
           "type": "zarr",
-          "path": "./wells/M/17.zarr"
+          "format": "relative",
+          "href": "./wells/M/17.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellM18",
         "id": "wellM18",
+        "name": "wellM18",
         "path": {
           "type": "zarr",
-          "path": "./wells/M/18.zarr"
+          "format": "relative",
+          "href": "./wells/M/18.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellM19",
         "id": "wellM19",
+        "name": "wellM19",
         "path": {
           "type": "zarr",
-          "path": "./wells/M/19.zarr"
+          "format": "relative",
+          "href": "./wells/M/19.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellM20",
         "id": "wellM20",
+        "name": "wellM20",
         "path": {
           "type": "zarr",
-          "path": "./wells/M/20.zarr"
+          "format": "relative",
+          "href": "./wells/M/20.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellM21",
         "id": "wellM21",
+        "name": "wellM21",
         "path": {
           "type": "zarr",
-          "path": "./wells/M/21.zarr"
+          "format": "relative",
+          "href": "./wells/M/21.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellM22",
         "id": "wellM22",
+        "name": "wellM22",
         "path": {
           "type": "zarr",
-          "path": "./wells/M/22.zarr"
+          "format": "relative",
+          "href": "./wells/M/22.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellM23",
         "id": "wellM23",
+        "name": "wellM23",
         "path": {
           "type": "zarr",
-          "path": "./wells/M/23.zarr"
+          "format": "relative",
+          "href": "./wells/M/23.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellM24",
         "id": "wellM24",
+        "name": "wellM24",
         "path": {
           "type": "zarr",
-          "path": "./wells/M/24.zarr"
+          "format": "relative",
+          "href": "./wells/M/24.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellN1",
         "id": "wellN1",
+        "name": "wellN1",
         "path": {
           "type": "zarr",
-          "path": "./wells/N/1.zarr"
+          "format": "relative",
+          "href": "./wells/N/1.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellN2",
         "id": "wellN2",
+        "name": "wellN2",
         "path": {
           "type": "zarr",
-          "path": "./wells/N/2.zarr"
+          "format": "relative",
+          "href": "./wells/N/2.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellN3",
         "id": "wellN3",
+        "name": "wellN3",
         "path": {
           "type": "zarr",
-          "path": "./wells/N/3.zarr"
+          "format": "relative",
+          "href": "./wells/N/3.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellN4",
         "id": "wellN4",
+        "name": "wellN4",
         "path": {
           "type": "zarr",
-          "path": "./wells/N/4.zarr"
+          "format": "relative",
+          "href": "./wells/N/4.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellN5",
         "id": "wellN5",
+        "name": "wellN5",
         "path": {
           "type": "zarr",
-          "path": "./wells/N/5.zarr"
+          "format": "relative",
+          "href": "./wells/N/5.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellN6",
         "id": "wellN6",
+        "name": "wellN6",
         "path": {
           "type": "zarr",
-          "path": "./wells/N/6.zarr"
+          "format": "relative",
+          "href": "./wells/N/6.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellN7",
         "id": "wellN7",
+        "name": "wellN7",
         "path": {
           "type": "zarr",
-          "path": "./wells/N/7.zarr"
+          "format": "relative",
+          "href": "./wells/N/7.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellN8",
         "id": "wellN8",
+        "name": "wellN8",
         "path": {
           "type": "zarr",
-          "path": "./wells/N/8.zarr"
+          "format": "relative",
+          "href": "./wells/N/8.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellN9",
         "id": "wellN9",
+        "name": "wellN9",
         "path": {
           "type": "zarr",
-          "path": "./wells/N/9.zarr"
+          "format": "relative",
+          "href": "./wells/N/9.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellN10",
         "id": "wellN10",
+        "name": "wellN10",
         "path": {
           "type": "zarr",
-          "path": "./wells/N/10.zarr"
+          "format": "relative",
+          "href": "./wells/N/10.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellN11",
         "id": "wellN11",
+        "name": "wellN11",
         "path": {
           "type": "zarr",
-          "path": "./wells/N/11.zarr"
+          "format": "relative",
+          "href": "./wells/N/11.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellN12",
         "id": "wellN12",
+        "name": "wellN12",
         "path": {
           "type": "zarr",
-          "path": "./wells/N/12.zarr"
+          "format": "relative",
+          "href": "./wells/N/12.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellN13",
         "id": "wellN13",
+        "name": "wellN13",
         "path": {
           "type": "zarr",
-          "path": "./wells/N/13.zarr"
+          "format": "relative",
+          "href": "./wells/N/13.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellN14",
         "id": "wellN14",
+        "name": "wellN14",
         "path": {
           "type": "zarr",
-          "path": "./wells/N/14.zarr"
+          "format": "relative",
+          "href": "./wells/N/14.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellN15",
         "id": "wellN15",
+        "name": "wellN15",
         "path": {
           "type": "zarr",
-          "path": "./wells/N/15.zarr"
+          "format": "relative",
+          "href": "./wells/N/15.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellN16",
         "id": "wellN16",
+        "name": "wellN16",
         "path": {
           "type": "zarr",
-          "path": "./wells/N/16.zarr"
+          "format": "relative",
+          "href": "./wells/N/16.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellN17",
         "id": "wellN17",
+        "name": "wellN17",
         "path": {
           "type": "zarr",
-          "path": "./wells/N/17.zarr"
+          "format": "relative",
+          "href": "./wells/N/17.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellN18",
         "id": "wellN18",
+        "name": "wellN18",
         "path": {
           "type": "zarr",
-          "path": "./wells/N/18.zarr"
+          "format": "relative",
+          "href": "./wells/N/18.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellN19",
         "id": "wellN19",
+        "name": "wellN19",
         "path": {
           "type": "zarr",
-          "path": "./wells/N/19.zarr"
+          "format": "relative",
+          "href": "./wells/N/19.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellN20",
         "id": "wellN20",
+        "name": "wellN20",
         "path": {
           "type": "zarr",
-          "path": "./wells/N/20.zarr"
+          "format": "relative",
+          "href": "./wells/N/20.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellN21",
         "id": "wellN21",
+        "name": "wellN21",
         "path": {
           "type": "zarr",
-          "path": "./wells/N/21.zarr"
+          "format": "relative",
+          "href": "./wells/N/21.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellN22",
         "id": "wellN22",
+        "name": "wellN22",
         "path": {
           "type": "zarr",
-          "path": "./wells/N/22.zarr"
+          "format": "relative",
+          "href": "./wells/N/22.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellN23",
         "id": "wellN23",
+        "name": "wellN23",
         "path": {
           "type": "zarr",
-          "path": "./wells/N/23.zarr"
+          "format": "relative",
+          "href": "./wells/N/23.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellN24",
         "id": "wellN24",
+        "name": "wellN24",
         "path": {
           "type": "zarr",
-          "path": "./wells/N/24.zarr"
+          "format": "relative",
+          "href": "./wells/N/24.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellO1",
         "id": "wellO1",
+        "name": "wellO1",
         "path": {
           "type": "zarr",
-          "path": "./wells/O/1.zarr"
+          "format": "relative",
+          "href": "./wells/O/1.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellO2",
         "id": "wellO2",
+        "name": "wellO2",
         "path": {
           "type": "zarr",
-          "path": "./wells/O/2.zarr"
+          "format": "relative",
+          "href": "./wells/O/2.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellO3",
         "id": "wellO3",
+        "name": "wellO3",
         "path": {
           "type": "zarr",
-          "path": "./wells/O/3.zarr"
+          "format": "relative",
+          "href": "./wells/O/3.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellO4",
         "id": "wellO4",
+        "name": "wellO4",
         "path": {
           "type": "zarr",
-          "path": "./wells/O/4.zarr"
+          "format": "relative",
+          "href": "./wells/O/4.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellO5",
         "id": "wellO5",
+        "name": "wellO5",
         "path": {
           "type": "zarr",
-          "path": "./wells/O/5.zarr"
+          "format": "relative",
+          "href": "./wells/O/5.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellO6",
         "id": "wellO6",
+        "name": "wellO6",
         "path": {
           "type": "zarr",
-          "path": "./wells/O/6.zarr"
+          "format": "relative",
+          "href": "./wells/O/6.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellO7",
         "id": "wellO7",
+        "name": "wellO7",
         "path": {
           "type": "zarr",
-          "path": "./wells/O/7.zarr"
+          "format": "relative",
+          "href": "./wells/O/7.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellO8",
         "id": "wellO8",
+        "name": "wellO8",
         "path": {
           "type": "zarr",
-          "path": "./wells/O/8.zarr"
+          "format": "relative",
+          "href": "./wells/O/8.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellO9",
         "id": "wellO9",
+        "name": "wellO9",
         "path": {
           "type": "zarr",
-          "path": "./wells/O/9.zarr"
+          "format": "relative",
+          "href": "./wells/O/9.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellO10",
         "id": "wellO10",
+        "name": "wellO10",
         "path": {
           "type": "zarr",
-          "path": "./wells/O/10.zarr"
+          "format": "relative",
+          "href": "./wells/O/10.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellO11",
         "id": "wellO11",
+        "name": "wellO11",
         "path": {
           "type": "zarr",
-          "path": "./wells/O/11.zarr"
+          "format": "relative",
+          "href": "./wells/O/11.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellO12",
         "id": "wellO12",
+        "name": "wellO12",
         "path": {
           "type": "zarr",
-          "path": "./wells/O/12.zarr"
+          "format": "relative",
+          "href": "./wells/O/12.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellO13",
         "id": "wellO13",
+        "name": "wellO13",
         "path": {
           "type": "zarr",
-          "path": "./wells/O/13.zarr"
+          "format": "relative",
+          "href": "./wells/O/13.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellO14",
         "id": "wellO14",
+        "name": "wellO14",
         "path": {
           "type": "zarr",
-          "path": "./wells/O/14.zarr"
+          "format": "relative",
+          "href": "./wells/O/14.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellO15",
         "id": "wellO15",
+        "name": "wellO15",
         "path": {
           "type": "zarr",
-          "path": "./wells/O/15.zarr"
+          "format": "relative",
+          "href": "./wells/O/15.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellO16",
         "id": "wellO16",
+        "name": "wellO16",
         "path": {
           "type": "zarr",
-          "path": "./wells/O/16.zarr"
+          "format": "relative",
+          "href": "./wells/O/16.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellO17",
         "id": "wellO17",
+        "name": "wellO17",
         "path": {
           "type": "zarr",
-          "path": "./wells/O/17.zarr"
+          "format": "relative",
+          "href": "./wells/O/17.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellO18",
         "id": "wellO18",
+        "name": "wellO18",
         "path": {
           "type": "zarr",
-          "path": "./wells/O/18.zarr"
+          "format": "relative",
+          "href": "./wells/O/18.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellO19",
         "id": "wellO19",
+        "name": "wellO19",
         "path": {
           "type": "zarr",
-          "path": "./wells/O/19.zarr"
+          "format": "relative",
+          "href": "./wells/O/19.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellO20",
         "id": "wellO20",
+        "name": "wellO20",
         "path": {
           "type": "zarr",
-          "path": "./wells/O/20.zarr"
+          "format": "relative",
+          "href": "./wells/O/20.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellO21",
         "id": "wellO21",
+        "name": "wellO21",
         "path": {
           "type": "zarr",
-          "path": "./wells/O/21.zarr"
+          "format": "relative",
+          "href": "./wells/O/21.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellO22",
         "id": "wellO22",
+        "name": "wellO22",
         "path": {
           "type": "zarr",
-          "path": "./wells/O/22.zarr"
+          "format": "relative",
+          "href": "./wells/O/22.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellO23",
         "id": "wellO23",
+        "name": "wellO23",
         "path": {
           "type": "zarr",
-          "path": "./wells/O/23.zarr"
+          "format": "relative",
+          "href": "./wells/O/23.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellO24",
         "id": "wellO24",
+        "name": "wellO24",
         "path": {
           "type": "zarr",
-          "path": "./wells/O/24.zarr"
+          "format": "relative",
+          "href": "./wells/O/24.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellP1",
         "id": "wellP1",
+        "name": "wellP1",
         "path": {
           "type": "zarr",
-          "path": "./wells/P/1.zarr"
+          "format": "relative",
+          "href": "./wells/P/1.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellP2",
         "id": "wellP2",
+        "name": "wellP2",
         "path": {
           "type": "zarr",
-          "path": "./wells/P/2.zarr"
+          "format": "relative",
+          "href": "./wells/P/2.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellP3",
         "id": "wellP3",
+        "name": "wellP3",
         "path": {
           "type": "zarr",
-          "path": "./wells/P/3.zarr"
+          "format": "relative",
+          "href": "./wells/P/3.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellP4",
         "id": "wellP4",
+        "name": "wellP4",
         "path": {
           "type": "zarr",
-          "path": "./wells/P/4.zarr"
+          "format": "relative",
+          "href": "./wells/P/4.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellP5",
         "id": "wellP5",
+        "name": "wellP5",
         "path": {
           "type": "zarr",
-          "path": "./wells/P/5.zarr"
+          "format": "relative",
+          "href": "./wells/P/5.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellP6",
         "id": "wellP6",
+        "name": "wellP6",
         "path": {
           "type": "zarr",
-          "path": "./wells/P/6.zarr"
+          "format": "relative",
+          "href": "./wells/P/6.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellP7",
         "id": "wellP7",
+        "name": "wellP7",
         "path": {
           "type": "zarr",
-          "path": "./wells/P/7.zarr"
+          "format": "relative",
+          "href": "./wells/P/7.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellP8",
         "id": "wellP8",
+        "name": "wellP8",
         "path": {
           "type": "zarr",
-          "path": "./wells/P/8.zarr"
+          "format": "relative",
+          "href": "./wells/P/8.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellP9",
         "id": "wellP9",
+        "name": "wellP9",
         "path": {
           "type": "zarr",
-          "path": "./wells/P/9.zarr"
+          "format": "relative",
+          "href": "./wells/P/9.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellP10",
         "id": "wellP10",
+        "name": "wellP10",
         "path": {
           "type": "zarr",
-          "path": "./wells/P/10.zarr"
+          "format": "relative",
+          "href": "./wells/P/10.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellP11",
         "id": "wellP11",
+        "name": "wellP11",
         "path": {
           "type": "zarr",
-          "path": "./wells/P/11.zarr"
+          "format": "relative",
+          "href": "./wells/P/11.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellP12",
         "id": "wellP12",
+        "name": "wellP12",
         "path": {
           "type": "zarr",
-          "path": "./wells/P/12.zarr"
+          "format": "relative",
+          "href": "./wells/P/12.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellP13",
         "id": "wellP13",
+        "name": "wellP13",
         "path": {
           "type": "zarr",
-          "path": "./wells/P/13.zarr"
+          "format": "relative",
+          "href": "./wells/P/13.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellP14",
         "id": "wellP14",
+        "name": "wellP14",
         "path": {
           "type": "zarr",
-          "path": "./wells/P/14.zarr"
+          "format": "relative",
+          "href": "./wells/P/14.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellP15",
         "id": "wellP15",
+        "name": "wellP15",
         "path": {
           "type": "zarr",
-          "path": "./wells/P/15.zarr"
+          "format": "relative",
+          "href": "./wells/P/15.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellP16",
         "id": "wellP16",
+        "name": "wellP16",
         "path": {
           "type": "zarr",
-          "path": "./wells/P/16.zarr"
+          "format": "relative",
+          "href": "./wells/P/16.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellP17",
         "id": "wellP17",
+        "name": "wellP17",
         "path": {
           "type": "zarr",
-          "path": "./wells/P/17.zarr"
+          "format": "relative",
+          "href": "./wells/P/17.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellP18",
         "id": "wellP18",
+        "name": "wellP18",
         "path": {
           "type": "zarr",
-          "path": "./wells/P/18.zarr"
+          "format": "relative",
+          "href": "./wells/P/18.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellP19",
         "id": "wellP19",
+        "name": "wellP19",
         "path": {
           "type": "zarr",
-          "path": "./wells/P/19.zarr"
+          "format": "relative",
+          "href": "./wells/P/19.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellP20",
         "id": "wellP20",
+        "name": "wellP20",
         "path": {
           "type": "zarr",
-          "path": "./wells/P/20.zarr"
+          "format": "relative",
+          "href": "./wells/P/20.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellP21",
         "id": "wellP21",
+        "name": "wellP21",
         "path": {
           "type": "zarr",
-          "path": "./wells/P/21.zarr"
+          "format": "relative",
+          "href": "./wells/P/21.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellP22",
         "id": "wellP22",
+        "name": "wellP22",
         "path": {
           "type": "zarr",
-          "path": "./wells/P/22.zarr"
+          "format": "relative",
+          "href": "./wells/P/22.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellP23",
         "id": "wellP23",
+        "name": "wellP23",
         "path": {
           "type": "zarr",
-          "path": "./wells/P/23.zarr"
+          "format": "relative",
+          "href": "./wells/P/23.zarr"
         }
       },
       {
         "type": "collection",
-        "name": "wellP24",
         "id": "wellP24",
+        "name": "wellP24",
         "path": {
           "type": "zarr",
-          "path": "./wells/P/24.zarr"
+          "format": "relative",
+          "href": "./wells/P/24.zarr"
         }
       }
     ]

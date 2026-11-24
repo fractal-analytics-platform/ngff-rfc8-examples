@@ -4,6 +4,7 @@ import random
 import uuid
 from pathlib import Path
 
+import ngio_collections as ngc
 import numpy as np
 import zarr
 
@@ -11,7 +12,12 @@ _RND = random.Random()
 _RND.seed(1234567)
 
 
-def get_uuid4(source: str | bytes | dict | None = None) -> str:
+AXES_YX = [
+    ngc.Axis(name="y", type="space", unit="micrometer"),
+    ngc.Axis(name="x", type="space", unit="micrometer"),
+]
+
+def get_uuid(source: str | bytes | dict | None = None) -> str:
     if source is None:
         kwargs = {"int": _RND.getrandbits(128)}
     elif isinstance(source, bytes):
@@ -28,7 +34,7 @@ def get_uuid4(source: str | bytes | dict | None = None) -> str:
         }
     else:
         raise NotImplementedError(f"{type(source)=} is not supported")
-    return str(uuid.UUID(**kwargs, version=4))
+    return str(uuid.UUID(**kwargs))
 
 
 def create_zarr_array(path: str | Path, seed: int = 1234567) -> None:
@@ -39,5 +45,6 @@ def create_zarr_array(path: str | Path, seed: int = 1234567) -> None:
         chunks=(100, 100),
         dtype="f4",
         overwrite=True,
+        dimension_names=["y", "x"]
     )
     z[:, :] = np.random.random((100, 100))

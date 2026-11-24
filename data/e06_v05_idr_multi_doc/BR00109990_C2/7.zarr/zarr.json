@@ -1,195 +1,141 @@
 {
   "attributes": {
     "ome": {
-      "version": "0.x",
+      "version": "0.9dev4",
       "type": "multiscale",
-      "name": "7",
       "id": "7",
-      "attributes": {
-        "coordinateSystems": [
-          {
-            "id": "7_space",
-            "axes": [
-              {
-                "name": "c",
-                "type": "channel"
-              },
-              {
-                "name": "y",
-                "type": "space",
-                "unit": "micrometer"
-              },
-              {
-                "name": "x",
-                "type": "space",
-                "unit": "micrometer"
-              }
-            ]
-          }
-        ]
-      },
-      "nodes": [
+      "name": "7",
+      "coordinateSystems": [
         {
-          "type": "singlescale",
-          "name": "7_scale0",
-          "id": "7_scale0",
-          "attributes": {
-            "coordinateTransformations": [
-              {
-                "input": {
-                  "id": "7_scale0"
-                },
-                "output": {
-                  "id": "7_space"
-                },
-                "type": "scale",
-                "scale": [
-                  1.0,
-                  0.3,
-                  0.3
-                ]
-              }
-            ]
-          },
+          "type": "coordinate_system",
+          "id": "7_space",
+          "axes": [
+            {
+              "name": "c",
+              "type": "channel"
+            },
+            {
+              "name": "y",
+              "type": "space",
+              "unit": "micrometer"
+            },
+            {
+              "name": "x",
+              "type": "space",
+              "unit": "micrometer"
+            }
+          ]
+        }
+      ],
+      "coordinateTransformations": [],
+      "data": [
+        {
+          "type": "array",
           "path": {
             "type": "zarr",
-            "path": "https:/livingobjects.ebi.ac.uk/idr/zarr/v0.5/idr0033A/BR00109990_C2.zarr/7/0"
-          }
+            "format": "http",
+            "href": "https://livingobjects.ebi.ac.uk/idr/zarr/v0.5/idr0033A/BR00109990_C2.zarr/7/0"
+          },
+          "downsamplingTransformations": [
+            {
+              "type": "scale",
+              "scale": [
+                1.0,
+                0.3,
+                0.3
+              ]
+            }
+          ]
         },
         {
-          "type": "singlescale",
-          "name": "7_scale1",
-          "id": "7_scale1",
-          "attributes": {
-            "coordinateTransformations": [
-              {
-                "input": {
-                  "id": "7_scale1"
-                },
-                "output": {
-                  "id": "7_space"
-                },
-                "type": "scale",
-                "scale": [
-                  1.0,
-                  0.6,
-                  0.6
-                ]
-              }
-            ]
-          },
+          "type": "array",
           "path": {
             "type": "zarr",
-            "path": "https:/livingobjects.ebi.ac.uk/idr/zarr/v0.5/idr0033A/BR00109990_C2.zarr/7/1"
-          }
+            "format": "http",
+            "href": "https://livingobjects.ebi.ac.uk/idr/zarr/v0.5/idr0033A/BR00109990_C2.zarr/7/1"
+          },
+          "downsamplingTransformations": [
+            {
+              "type": "scale",
+              "scale": [
+                1.0,
+                0.6,
+                0.6
+              ]
+            }
+          ]
         },
         {
-          "type": "singlescale",
-          "name": "7_scale2",
-          "id": "7_scale2",
-          "attributes": {
-            "coordinateTransformations": [
-              {
-                "input": {
-                  "id": "7_scale2"
-                },
-                "output": {
-                  "id": "7_space"
-                },
-                "type": "scale",
-                "scale": [
-                  1.0,
-                  1.2,
-                  1.2
-                ]
-              }
-            ]
-          },
+          "type": "array",
           "path": {
             "type": "zarr",
-            "path": "https:/livingobjects.ebi.ac.uk/idr/zarr/v0.5/idr0033A/BR00109990_C2.zarr/7/2"
-          }
+            "format": "http",
+            "href": "https://livingobjects.ebi.ac.uk/idr/zarr/v0.5/idr0033A/BR00109990_C2.zarr/7/2"
+          },
+          "downsamplingTransformations": [
+            {
+              "type": "scale",
+              "scale": [
+                1.0,
+                1.2,
+                1.2
+              ]
+            }
+          ]
         },
         {
-          "type": "singlescale",
-          "name": "7_scale3",
-          "id": "7_scale3",
-          "attributes": {
-            "coordinateTransformations": [
-              {
-                "input": {
-                  "id": "7_scale3"
-                },
-                "output": {
-                  "id": "7_space"
-                },
-                "type": "scale",
-                "scale": [
-                  1.0,
-                  2.4,
-                  2.4
-                ]
-              }
-            ]
-          },
+          "type": "array",
           "path": {
             "type": "zarr",
-            "path": "https:/livingobjects.ebi.ac.uk/idr/zarr/v0.5/idr0033A/BR00109990_C2.zarr/7/3"
-          }
+            "format": "http",
+            "href": "https://livingobjects.ebi.ac.uk/idr/zarr/v0.5/idr0033A/BR00109990_C2.zarr/7/3"
+          },
+          "downsamplingTransformations": [
+            {
+              "type": "scale",
+              "scale": [
+                1.0,
+                2.4,
+                2.4
+              ]
+            }
+          ]
         },
         {
-          "type": "singlescale",
-          "name": "7_scale4",
-          "id": "7_scale4",
-          "attributes": {
-            "coordinateTransformations": [
-              {
-                "input": {
-                  "id": "7_scale4"
-                },
-                "output": {
-                  "id": "7_space"
-                },
-                "type": "scale",
-                "scale": [
-                  1.0,
-                  4.8,
-                  4.8
-                ]
-              }
-            ]
-          },
+          "type": "array",
           "path": {
             "type": "zarr",
-            "path": "https:/livingobjects.ebi.ac.uk/idr/zarr/v0.5/idr0033A/BR00109990_C2.zarr/7/4"
-          }
+            "format": "http",
+            "href": "https://livingobjects.ebi.ac.uk/idr/zarr/v0.5/idr0033A/BR00109990_C2.zarr/7/4"
+          },
+          "downsamplingTransformations": [
+            {
+              "type": "scale",
+              "scale": [
+                1.0,
+                4.8,
+                4.8
+              ]
+            }
+          ]
         },
         {
-          "type": "singlescale",
-          "name": "7_scale5",
-          "id": "7_scale5",
-          "attributes": {
-            "coordinateTransformations": [
-              {
-                "input": {
-                  "id": "7_scale5"
-                },
-                "output": {
-                  "id": "7_space"
-                },
-                "type": "scale",
-                "scale": [
-                  1.0,
-                  9.6,
-                  9.6
-                ]
-              }
-            ]
-          },
+          "type": "array",
           "path": {
             "type": "zarr",
-            "path": "https:/livingobjects.ebi.ac.uk/idr/zarr/v0.5/idr0033A/BR00109990_C2.zarr/7/5"
-          }
+            "format": "http",
+            "href": "https://livingobjects.ebi.ac.uk/idr/zarr/v0.5/idr0033A/BR00109990_C2.zarr/7/5"
+          },
+          "downsamplingTransformations": [
+            {
+              "type": "scale",
+              "scale": [
+                1.0,
+                9.6,
+                9.6
+              ]
+            }
+          ]
         }
       ]
     }

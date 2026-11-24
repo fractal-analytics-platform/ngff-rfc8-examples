@@ -1,0 +1,126 @@
+{
+  "attributes": {
+    "ome": {
+      "version": "0.9dev4",
+      "type": "multiscale",
+      "id": "aafa7aec-b714-62a9-528d-9b9af07dc495",
+      "name": "Multiscale 4",
+      "coordinateSystems": [
+        {
+          "type": "coordinate_system",
+          "id": "29c85b73-77cb-6c2b-80f7-ffaa71156f93",
+          "name": "physical",
+          "axes": [
+            {
+              "name": "y",
+              "type": "space",
+              "unit": "micrometer"
+            },
+            {
+              "name": "x",
+              "type": "space",
+              "unit": "micrometer"
+            }
+          ]
+        }
+      ],
+      "coordinateTransformations": [
+        {
+          "input": {
+            "type": "multiscale",
+            "ref": "aafa7aec-b714-62a9-528d-9b9af07dc495"
+          },
+          "output": {
+            "type": "coordinate_system",
+            "ref": "29c85b73-77cb-6c2b-80f7-ffaa71156f93"
+          },
+          "type": "scale",
+          "scale": [
+            0.1,
+            0.1
+          ]
+        }
+      ],
+      "data": [
+        {
+          "type": "array",
+          "path": {
+            "type": "zarr",
+            "format": "relative",
+            "href": "./s0"
+          }
+        },
+        {
+          "type": "array",
+          "path": {
+            "type": "zarr",
+            "format": "relative",
+            "href": "./s1"
+          },
+          "downsamplingTransformations": [
+            {
+              "type": "scale",
+              "scale": [
+                2.0,
+                2.0
+              ]
+            }
+          ]
+        },
+        {
+          "type": "array",
+          "path": {
+            "type": "zarr",
+            "format": "relative",
+            "href": "./s2"
+          },
+          "downsamplingTransformations": [
+            {
+              "type": "scale",
+              "scale": [
+                4.0,
+                4.0
+              ]
+            }
+          ]
+        },
+        {
+          "type": "array",
+          "path": {
+            "type": "zarr",
+            "format": "relative",
+            "href": "./s3"
+          },
+          "downsamplingTransformations": [
+            {
+              "type": "scale",
+              "scale": [
+                8.0,
+                8.0
+              ]
+            }
+          ]
+        },
+        {
+          "type": "array",
+          "path": {
+            "type": "zarr",
+            "format": "relative",
+            "href": "./s4"
+          },
+          "downsamplingTransformations": [
+            {
+              "type": "scale",
+              "scale": [
+                16.0,
+                16.0
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "zarr_format": 3,
+  "node_type": "group"
+}
