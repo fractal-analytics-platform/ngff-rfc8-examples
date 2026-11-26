@@ -7,8 +7,8 @@
     "nodes": [
       {
         "type": "multiscale",
-        "id": "ExpD_chicken_embryo_MIP.ome",
-        "name": "ExpD_chicken_embryo_MIP.ome",
+        "id": "0_bf2raw_ExpD_chicken_embryo_MIP.ome",
+        "name": "0_bf2raw_ExpD_chicken_embryo_MIP.ome",
         "path": {
           "type": "zarr",
           "format": "relative",
@@ -17,8 +17,8 @@
       },
       {
         "type": "multiscale",
-        "id": "ExpA_VIP_ASLM_on",
-        "name": "ExpA_VIP_ASLM_on",
+        "id": "1_bf2raw_ExpA_VIP_ASLM_on",
+        "name": "1_bf2raw_ExpA_VIP_ASLM_on",
         "path": {
           "type": "zarr",
           "format": "relative",
@@ -27,8 +27,8 @@
       },
       {
         "type": "multiscale",
-        "id": "6001240_labels",
-        "name": "6001240_labels",
+        "id": "2_bf2raw_6001240_labels",
+        "name": "2_bf2raw_6001240_labels",
         "path": {
           "type": "zarr",
           "format": "relative",
@@ -37,8 +37,8 @@
       },
       {
         "type": "multiscale",
-        "id": "IMG_1033-1112_Asterella_gracilis_Mannia_gracilis_stature.ome",
-        "name": "IMG_1033-1112_Asterella_gracilis_Mannia_gracilis_stature.ome",
+        "id": "3_bf2raw_IMG_1033-1112_Asterella_gracilis_Mannia_gracilis_stature.ome",
+        "name": "3_bf2raw_IMG_1033-1112_Asterella_gracilis_Mannia_gracilis_stature.ome",
         "path": {
           "type": "zarr",
           "format": "relative",
@@ -52,8 +52,8 @@
         "nodes": [
           {
             "type": "multiscale",
-            "id": "0",
-            "name": "0",
+            "id": "4_bf2raw_0",
+            "name": "4_bf2raw_0",
             "path": {
               "type": "zarr",
               "format": "relative",
@@ -69,8 +69,8 @@
         "nodes": [
           {
             "type": "multiscale",
-            "id": "0",
-            "name": "0",
+            "id": "5_bf2raw_0",
+            "name": "5_bf2raw_0",
             "path": {
               "type": "zarr",
               "format": "relative",
@@ -81,8 +81,8 @@
       },
       {
         "type": "multiscale",
-        "id": "9822152",
-        "name": "9822152",
+        "id": "6_bf2raw_9822152",
+        "name": "6_bf2raw_9822152",
         "path": {
           "type": "zarr",
           "format": "relative",
@@ -96,8 +96,8 @@
         "nodes": [
           {
             "type": "multiscale",
-            "id": "0",
-            "name": "0",
+            "id": "7_bf2raw_0",
+            "name": "7_bf2raw_0",
             "path": {
               "type": "zarr",
               "format": "relative",
@@ -106,8 +106,8 @@
           },
           {
             "type": "multiscale",
-            "id": "1",
-            "name": "1",
+            "id": "7_bf2raw_1",
+            "name": "7_bf2raw_1",
             "path": {
               "type": "zarr",
               "format": "relative",
@@ -116,8 +116,8 @@
           },
           {
             "type": "multiscale",
-            "id": "2",
-            "name": "2",
+            "id": "7_bf2raw_2",
+            "name": "7_bf2raw_2",
             "path": {
               "type": "zarr",
               "format": "relative",
@@ -126,8 +126,8 @@
           },
           {
             "type": "multiscale",
-            "id": "3",
-            "name": "3",
+            "id": "7_bf2raw_3",
+            "name": "7_bf2raw_3",
             "path": {
               "type": "zarr",
               "format": "relative",
@@ -136,8 +136,8 @@
           },
           {
             "type": "multiscale",
-            "id": "4",
-            "name": "4",
+            "id": "7_bf2raw_4",
+            "name": "7_bf2raw_4",
             "path": {
               "type": "zarr",
               "format": "relative",
@@ -146,8 +146,8 @@
           },
           {
             "type": "multiscale",
-            "id": "5",
-            "name": "5",
+            "id": "7_bf2raw_5",
+            "name": "7_bf2raw_5",
             "path": {
               "type": "zarr",
               "format": "relative",
@@ -156,8 +156,8 @@
           },
           {
             "type": "multiscale",
-            "id": "6",
-            "name": "6",
+            "id": "7_bf2raw_6",
+            "name": "7_bf2raw_6",
             "path": {
               "type": "zarr",
               "format": "relative",
@@ -166,8 +166,8 @@
           },
           {
             "type": "multiscale",
-            "id": "7",
-            "name": "7",
+            "id": "7_bf2raw_7",
+            "name": "7_bf2raw_7",
             "path": {
               "type": "zarr",
               "format": "relative",
@@ -176,8 +176,8 @@
           },
           {
             "type": "multiscale",
-            "id": "8",
-            "name": "8",
+            "id": "7_bf2raw_8",
+            "name": "7_bf2raw_8",
             "path": {
               "type": "zarr",
               "format": "relative",
@@ -188,8 +188,8 @@
       },
       {
         "type": "multiscale",
-        "id": "4995115",
-        "name": "4995115",
+        "id": "8_bf2raw_4995115",
+        "name": "8_bf2raw_4995115",
         "path": {
           "type": "zarr",
           "format": "relative",

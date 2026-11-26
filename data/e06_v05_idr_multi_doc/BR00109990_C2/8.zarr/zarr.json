@@ -3,12 +3,12 @@
     "ome": {
       "version": "0.9dev4",
       "type": "multiscale",
-      "id": "8",
-      "name": "8",
+      "id": "7_bf2raw_8",
+      "name": "7_bf2raw_8",
       "coordinateSystems": [
         {
           "type": "coordinate_system",
-          "id": "8_space",
+          "id": "7_bf2raw_8_space",
           "axes": [
             {
               "name": "c",

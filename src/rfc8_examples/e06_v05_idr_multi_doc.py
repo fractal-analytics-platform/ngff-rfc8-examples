@@ -56,7 +56,7 @@ def add_trailing_slash(url: str) -> str:
         return f"{url}/"
 
 
-def write_image(zarr_url: str, base_path: Path, ome_attrs: dict):
+def write_image(zarr_url: str, base_path: Path, parent_id: str, ome_attrs: dict):
 
     img_name = str(Path(zarr_url).stem).replace(".zarr", "")
     img_name = img_name.replace(" ", "_").replace("(", "").replace(")", "")
@@ -76,7 +76,7 @@ def write_image(zarr_url: str, base_path: Path, ome_attrs: dict):
     print("dataset paths", ds_paths)
     scales = [ds["coordinateTransformations"][0]["scale"] for ds in ms_json["datasets"]]
 
-    ms_id = f"{img_name}"
+    ms_id = f"{parent_id}_{img_name}"
     multiscale_node = build_multiscale(ms_id, ds_paths, scales, axes)
     print("base path", base_path, "image name", img_name)
     write_path = f"{base_path}/{img_name}.zarr"
@@ -110,9 +110,10 @@ def build_collection(base_path: Path) -> ngc.Node:
         zarr_json = requests.get(zarr_url + "/zarr.json").json()
         ome_attrs = zarr_json["attributes"]["ome"]
 
+        bf_node_id = f"{index}_bf2raw"
         if "bioformats2raw.layout" in ome_attrs:
             img_name = str(Path(zarr_url).stem).replace(".zarr", "")
-            bf_node = ngc.new_collection(id=f"{index}_bf2raw", name=f"{index}_bf2raw")
+            bf_node = ngc.new_collection(id=bf_node_id, name=f"{index}_bf2raw")
             series = 0
             while True:
                 try:
@@ -121,7 +122,7 @@ def build_collection(base_path: Path) -> ngc.Node:
                     ome_attrs = series_json["attributes"]["ome"]
                     print("write image", f"{img_name}/{series}")
                     rf_image = write_image(
-                        f"{zarr_url}/{series}", f"{base_path}/{img_name}", ome_attrs
+                        f"{zarr_url}/{series}", f"{base_path}/{img_name}", bf_node_id, ome_attrs
                     )
                     bf_node = bf_node.add_external(rf_image)
                 except Exception as e:  # noqa: BLE001
@@ -132,7 +133,7 @@ def build_collection(base_path: Path) -> ngc.Node:
             idr_collection_node = idr_collection_node.add(bf_node)
 
         else:
-            rf_image = write_image(zarr_url, base_path, ome_attrs)
+            rf_image = write_image(zarr_url, base_path, bf_node_id, ome_attrs)
             idr_collection_node = idr_collection_node.add_external(rf_image)
 
     return idr_collection_node
