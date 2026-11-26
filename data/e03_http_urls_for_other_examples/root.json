@@ -12,7 +12,7 @@
         "path": {
           "type": "zarr",
           "format": "http",
-          "href": "https://raw.githubusercontent.com/fractal-analytics-platform/ngff-rfc8-examples/revision/data/e01_inlined_multiscale"
+          "href": "https://raw.githubusercontent.com/fractal-analytics-platform/ngff-rfc8-examples/main/data/e01_inlined_multiscale"
         }
       },
       {
@@ -22,7 +22,7 @@
         "path": {
           "type": "zarr",
           "format": "http",
-          "href": "https://raw.githubusercontent.com/fractal-analytics-platform/ngff-rfc8-examples/revision/data/e02_distributed_multiscales"
+          "href": "https://raw.githubusercontent.com/fractal-analytics-platform/ngff-rfc8-examples/main/data/e02_distributed_multiscales"
         }
       }
     ]
